@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css?family=Crete+Round");
+/*
+#222a3f Dark Blue
+#566885 Blue
+#d6e1ef Light Blue
+#f6f5f3 White/grey
+#948e8c Grey
+*/
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Crete Round", serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.flexContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#header {
+  width: 100%;
+  height: 50px;
+  padding-top: 5px;
+  background-color: #222a3ff1;
+  color: rgb(255, 255, 255);
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: solid #566885;
+}
+
+#logo {
+  margin: 0 0 0 200px;
+  width: 90px;
+}
+
+#header nav ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0 200px 0 0;
+}
+
+#header nav ul li a {
+  padding: 0 10px 0 0;
+  color: white;
+  text-decoration: none;
+}
+
+#header a:hover {
+  color: #ffc8ea;
+}
+
+h1,
+h2,
+h3 {
+  font-size: 34px;
+  border-bottom: double;
+  width: 160px;
+  margin: 0 auto;
+  position: relative;
+  top: 60px;
+}
+
+#about {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.623)),
+    url("../imgs/milky-way.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+}
+
+#aboutMsgContainer {
+  border: solid #222a3f;
+  border-radius: 5px;
+  background: #222a3fde;
+  width: 700px;
+  height: 230px;
+  margin: 25vh 0 0 0;
+  padding: 4vh 2vh 0 2vh;
+}
+
+.typing {
+  transform: translateY(-50%);
+  font-size: 48px;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0;
+  width: 700px;
+
+  border-right: 2px solid transparent;
+}
+
+.animation-type1 {
+  animation: type 1.5s steps(40) 1s 1 normal both, cursor 0.5s steps(10) normal;
+}
+
+.animation-type2 {
+  animation: type 1.5s steps(40) 1s 1 normal both, cursor 0.5s steps(10) normal;
+  animation-delay: 2.5s;
+}
+
+.animation-type3 {
+  animation: type 1.5s steps(40) 1s 1 normal both, cursor 0.5s steps(10) normal;
+  animation-delay: 4.5s;
+}
+
+.animation-type4 {
+  animation: type-short 1.5s steps(40) 1s 1 normal both,
+    cursor 1s steps(10) infinite normal;
+  animation-delay: 6.5s;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 700px;
+  }
+}
+
+@keyframes type-short {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 420px;
+  }
+}
+
+@keyframes cursor {
+  0% {
+    border-right-color: rgb(255, 255, 255);
+  }
+
+  100% {
+    border-right-color: transparent;
+  }
+}
+
+#projects {
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #f6f5f3;
+  color: #222a3f;
+}
+
+#projects .container {
+  margin-top: 100px;
+}
+
+.projectCard {
+  width: 400px;
+  height: 300px;
+  border: solid black;
+  margin: 5px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.card1 {
+}
+
+.card2 {
+}
+
+.card3 {
+}
+
+#skills {
+  text-align: center;
+  width: 100%;
+  height: 75vh;
+  background-color: #d6e1ef;
+  color: #222a3f;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  padding: 10px;
+}
+
+#skills .container {
+  margin-top: 100px;
+}
+
+.skillItem {
+  width: 110px;
+  height: 200px;
+  margin: 0 60px 5px 0px;
+}
+
+#aspLogo,
+#mySqlLogo,
+#oracleLogo {
+  width: 120px;
+}
+
+#oracleLogo {
+  margin-top: 50px;
+}
+
+#contact {
+  width: 100%;
+  text-align: center;
+  height: 70vh;
+  background-color: #2d3341;
+  color: #fff;
+}
+
+#contact .container {
+  margin-top: 100px;
+}
+
+#contact a {
+  color: white;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  color: rgb(202, 244, 250);
+  text-decoration: none;
+}
+
+.rowBlock {
+  font-size: 22px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-content: left;
+}
+
+#headshot {
+  width: 160px;
+  border-radius: 50%;
+  margin: 20px 0 0 0;
+}
+
+#footer {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  background-color: #222a3f;
+  color: #fff;
+}
