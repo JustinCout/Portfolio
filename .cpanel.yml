@@ -1,6 +1,6 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/justaynd/repositories/Portfolio/
- - /bin/cp index.html $DEPLOYPATH
- - /bin/cp style.css $DEPLOYPATH
+    - export DEPLOYPATH=/home/justaynd/public_html/Portfolio/
+ - /bin/cp * $DEPLOYPATH
+
