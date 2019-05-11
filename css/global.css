@@ -201,6 +201,10 @@ h3 {
   padding: 10px;
 }
 
+#skills p {
+  margin: 100px 400px 0 400px;
+}
+
 #skills .container {
   margin-top: 100px;
 }

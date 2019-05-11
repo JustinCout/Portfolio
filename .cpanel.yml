@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/justaynd/repositories/Portfolio/
+    - /bin/cp * $DEPLOYPATH
