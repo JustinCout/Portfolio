@@ -40,6 +40,7 @@ body {
   justify-content: space-between;
   align-items: flex-end;
   border-bottom: solid #566885;
+  z-index: 1;
 }
 
 #logo {
