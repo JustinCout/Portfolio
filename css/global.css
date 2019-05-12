@@ -167,9 +167,10 @@ h3 {
 #projects {
   text-align: center;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: #f6f5f3;
   color: #222a3f;
+  padding: 0 0 10vh 0;
 }
 
 #projects .container {
@@ -177,10 +178,10 @@ h3 {
 }
 
 .projectCard {
-  width: 400px;
+  width: 500px;
   height: 300px;
-  border: solid black;
-  margin: 5px;
+  border: 2px solid #b4c2ec;
+  margin: 2px;
 }
 
 .row {
@@ -189,21 +190,54 @@ h3 {
 }
 
 .card1 {
+  background: url("../imgs/tollo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 10% 0;
+  transition: 3s;
+}
+
+.card1:hover {
+  background-image: linear-gradient(#fffffff3, #bad1e7f1),
+    url("../imgs/tollo.jpg");
+  opacity: 0.5;
 }
 
 .card2 {
+  background-image: url("../imgs/thanos-survivors.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  transition: 3s;
+}
+
+.card2:hover {
+  background-image: linear-gradient(#fffffff3, #bad1e7f1),
+    url("../imgs/thanos-survivors.png");
+  opacity: 0.5;
 }
 
 .card3 {
+  background-image: url("../imgs/tictactoe.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  transition: 3s;
+}
+
+.card3:hover {
+  background-image: linear-gradient(#fffffff3, #bad1e7f1),
+    url("../imgs/tictactoe.png");
+  opacity: 0.5;
 }
 
 #skills {
   text-align: center;
   width: 100%;
-  height: 75vh;
+  height: 100%;
   background-color: #d6e1ef;
   color: #222a3f;
-  padding: 10px;
+  padding: 10px 0 20px 0;
 }
 
 #skills p {
@@ -248,10 +282,11 @@ h3 {
 #contact {
   width: 100%;
   text-align: center;
-  height: 80vh;
+  height: 100%;
   background-color: #2d3341;
   color: #fff;
   margin: 0;
+  padding: 0 0 30px 0;
 }
 
 #contact .container {
