@@ -1,6 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/justaynd/public_html/Portfolio/
- - /bin/cp * $DEPLOYPATH
-
