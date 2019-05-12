@@ -19,7 +19,13 @@ body {
   overflow-x: hidden;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 .flexContainer {
+  flex: 1 0 auto;
   display: flex;
   flex-direction: column;
 }
@@ -197,17 +203,12 @@ h3 {
   height: 75vh;
   background-color: #d6e1ef;
   color: #222a3f;
-  border-left: 70px solid transparent;
-  border-right: 70px solid transparent;
   padding: 10px;
 }
 
 #skills p {
-  margin: 100px 400px 0 400px;
-}
-
-#skills .container {
-  margin-top: 100px;
+  margin: 100px 20% 0 20%;
+  font-size: 18px;
 }
 
 .skillItem {
@@ -216,10 +217,28 @@ h3 {
   margin: 0 60px 5px 0px;
 }
 
+#skills .container {
+  width: 60%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+
+#htmlLogo,
+#cssLogo,
+#phpLogo,
+#reactLogo,
+#nodeLogo,
+#gitLogo,
 #aspLogo,
 #mySqlLogo,
 #oracleLogo {
-  width: 120px;
+  width: 120%;
+}
+#jsLogo {
+  width: 90%;
 }
 
 #oracleLogo {
@@ -229,9 +248,10 @@ h3 {
 #contact {
   width: 100%;
   text-align: center;
-  height: 70vh;
+  height: 80vh;
   background-color: #2d3341;
   color: #fff;
+  margin: 0;
 }
 
 #contact .container {
@@ -268,4 +288,152 @@ h3 {
   text-align: center;
   background-color: #222a3f;
   color: #fff;
+  flex-shrink: 0;
+  position: relative;
+  bottom: 0;
+}
+
+/*****************Responsiveness**********************/
+
+@media only screen and (max-width: 1416px) {
+  #logo {
+    margin: 0 0 0 100px;
+    width: 90px;
+  }
+
+  #header nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0 100px 0 0;
+  }
+
+  .skillItem {
+    width: 100px;
+    height: 100px;
+    margin: 0px 30px 10px 0px;
+  }
+
+  #nodeLogo,
+  #phpLogo,
+  #gitLogo,
+  #aspLogo {
+    margin-top: 30px;
+  }
+
+  #oracleLogo {
+    margin-top: 70px;
+  }
+}
+
+@media only screen and (max-width: 867px) {
+  #skills {
+    height: 90vh;
+  }
+
+  .skillItem {
+    width: 90px;
+    height: 120px;
+    margin: 0 60px 5px 0px;
+  }
+
+  #skills .container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  #aboutMsgContainer {
+    width: 400px;
+    height: 140px;
+    margin: 25vh 0 0 0;
+    padding: 4vh 2vh 0 2vh;
+  }
+
+  .typing {
+    transform: translateY(-50%);
+    font-size: 28px;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0;
+    width: 700px;
+    border-right: 2px solid transparent;
+  }
+
+  @keyframes type-short {
+    0% {
+      width: 0;
+    }
+
+    100% {
+      width: 250px;
+    }
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  #oracleLogo {
+    margin-top: 60px;
+  }
+
+  .skillItem {
+    width: 100px;
+    height: 60px;
+    margin: 50px 30px 10px 0px;
+  }
+
+  #skills .container {
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 519px) {
+  #oracleLogo {
+    margin-top: 50px;
+  }
+
+  .skillItem {
+    width: 80px;
+    height: 40px;
+    margin: 50px 30px 10px 0px;
+  }
+
+  #skills .container {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  #aboutMsgContainer {
+    width: 320px;
+    height: 120px;
+    margin: 25vh 0 0 0;
+    padding: 1vh 0 4vh 0 2vh;
+  }
+
+  .typing {
+    font-size: 22px;
+  }
+
+  @keyframes type-short {
+    0% {
+      width: 0;
+    }
+
+    100% {
+      width: 190px;
+    }
+  }
+  #oracleLogo {
+    margin-top: 50px;
+  }
+
+  .skillItem {
+    width: 70px;
+    height: 50px;
+    margin: 20px 30px 5px 0px;
+  }
+
+  #skills .container {
+    margin-top: 10px;
+  }
 }
