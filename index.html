@@ -18,15 +18,25 @@
         <a href="#"
           ><img src="imgs/JC-logo2.png" alt="Justin Coutinho's logo" id="logo"
         /></a>
-        <nav>
-          <ul>
-            <li><a id="aboutLink" href="#">ABOUT</a></li>
-            <li><a id="projectsLink" href="#">PROJECTS</a></li>
-            <li><a id="skillsLink" href="#">SKILLS</a></li>
-            <li><a id="contactLink" href="#">CONTACT</a></li>
-            <li><a href="#">RESUME</a></li>
-          </ul>
-        </nav>
+        
+      <div id="dropdown">
+      <div id="burgerMenuContainer">
+        <div class="burgerMenu"></div>
+        <div class="burgerMenu"></div>
+        <div class="burgerMenu"></div>
+      </div>
+      <div id="dropdownContent">
+          <nav>
+              <ul>
+                <li><a class="aboutLink" href="#">ABOUT</a></li>
+                <li><a class="projectsLink" href="#">PROJECTS</a></li>
+                <li><a class="skillsLink" href="#">SKILLS</a></li>
+                <li><a class="contactLink" href="#">CONTACT</a></li>
+                <li><a href="#">RESUME</a></li>
+              </ul>
+            </nav>
+        </div>
+      </div>
       </header>
       <section id="about">
         <div id="aboutMsgContainer">
@@ -43,48 +53,50 @@
           <p class="typing animation-type4">
             an all-around geek.
           </p>
-        </div>
+        </div></div>
       </section>
 
       <section id="projects">
         <h2>PROJECTS</h2>
         <div class="container">
-          <div class="row">
-            <div class="projectCard card1">
-              <h4 class="cardTitle">Tollo</h4>
-              <p>
-                Tollo is a fitness application designed to help people track
-                their progress, workout plans, and set goals. It was primarily
-                developed using PHP with JavaScript elements. The features I
-                worked on are the profile view, reminders, notifications, the
-                about section, and the overall design of the application.
-              </p>
-              <a class="cardBtn" href="http://delanh.com/tollo/index.php"
-                >VISIT</a
-              >
-            </div>
+          <div class="projectCard card1">
+            <h4 class="cardTitle">Tollo</h4>
+            <p>
+              Tollo is a fitness application designed to help people track their
+              progress, workout plans, and set goals. It was primarily developed
+              using PHP with JavaScript elements. The features I worked on are
+              the profile view, reminders, notifications, the about section, and
+              the overall design of the application.
+            </p>
+            <a class="cardBtn" href="http://delanh.com/tollo/index.php"
+              >VISIT</a
+            >
+          </div>
 
-            <div class="projectCard card2">
-              <h4 class="cardTitle2">Thanos' Survivors</h4>
-              <p>
-                A web app that brings together Superhero API and the Reddit API in one cohesive concept.
-                This application was composed with JavaScript and jQuery, using API calls to manipulate the JSON data 
-                of various superheroes and subreddits. The concept of the application is prefaced after the events of Avengers: Infinity War,
-                creating a fun and interactive application for fans.
-              </p>
-              <a
-                class="cardBtn2"
-                href="https://justincout.github.io/ThanosSurvivors/"
-                >VISIT</a
-              >
-            </div>
+          <div class="projectCard card2">
+            <h4 class="cardTitle2">Thanos' Survivors</h4>
+            <p>
+              A web app that brings together Superhero API and the Reddit API in
+              one cohesive concept. This application was composed with
+              JavaScript and jQuery, using API calls to manipulate the JSON data
+              of various superheroes and subreddits. The concept of the
+              application is prefaced after the events of Avengers: Infinity
+              War, creating a fun and interactive application for fans.
+            </p>
+            <a
+              class="cardBtn2"
+              href="https://justincout.github.io/ThanosSurvivors/"
+              >VISIT</a
+            >
           </div>
-          <div class="row">
-            <a href="https://justincout.github.io/Tic-Tac-Toe/">
-              <div class="projectCard card3"></div
-            ></a>
-            <div class="projectCard card4"></div>
+
+          <div class="projectCard card3">
+            <h4 class="cardTitle3">Tic-Tac-Toe</h4>
+            <a class="cardBtn3" href="https://justincout.github.io/Tic-Tac-Toe/"
+              >VISIT</a
+            >
           </div>
+          <div class="projectCard card4"></div>
         </div>
       </section>
       <section id="skills">
@@ -155,24 +167,9 @@
         <h3>CONTACT</h3>
         <div class="container">
           <div id="contactInfo">
-            <div class="rowBlock">
-              <p>
-                <i class="fas fa-envelope fa-lg"></i
-                ><a href="mailto:justincoutinho95@gmail.com">
-                  justincoutinho95@gmail.com</a
-                >
-              </p>
-            </div>
-            <div class="rowBlock">
-              <p>
-                <i class="fab fa-github fa-lg"> </i>
-                <a href="https://github.com/JustinCout">
-                  github.com/JustinCout</a
-                >
-              </p>
-            </div>
-            <div class="rowBlock">
-              <p><i class="fas fa-phone fa-lg"></i> 416 795 8483</p>
+              <a href="mailto:justincoutinho95@gmail.com"><i class="fas fa-envelope fa-4x"></i></a>
+              <a href="https://github.com/JustinCout"><i class="fab fa-github fa-4x"> </i></a>
+              <a href="https://www.linkedin.com/in/justin-coutinho-a4506a102/"><i class="fab fa-linkedin fa-4x"></i></a>
             </div>
           </div>
           <img

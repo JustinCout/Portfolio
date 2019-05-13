@@ -94,9 +94,9 @@ h3 {
 }
 
 #aboutMsgContainer {
-  border: solid #222a3f;
+  border: solid #222a3fbb;
   border-radius: 5px;
-  background: #222a3fde;
+  background: #222a3fbb;
   width: 700px;
   height: 230px;
   margin: 25vh 0 0 0;
@@ -164,10 +164,12 @@ h3 {
   }
 }
 
+/**********PROJECTS**********/
+
 #projects {
   text-align: center;
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   background-color: #f6f5f3;
   color: #222a3f;
   padding: 0 0 10vh 0;
@@ -175,13 +177,17 @@ h3 {
 
 #projects .container {
   margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-flow: wrap;
 }
 
 .projectCard {
   width: 500px;
   height: 300px;
   border: 2px solid #b4c2ec;
-  margin: 2px;
+  margin: 5px;
 }
 
 .projectCard p {
@@ -224,14 +230,11 @@ h3 {
 }
 
 .cardBtn:hover,
-.cardBtn2:hover {
+.cardBtn2:hover,
+.cardBtn3:hover,
+.cardBtn4:hover {
   background: #222a3f;
   color: white;
-}
-
-.row {
-  display: flex;
-  justify-content: center;
 }
 
 .card1 {
@@ -242,7 +245,7 @@ h3 {
 }
 
 .card1:hover {
-  background-image: linear-gradient(#fffffff3, #bad1e7f1),
+  background-image: linear-gradient(#ffffffc7, #bad1e7),
     url("../imgs/tollo.jpg");
 }
 
@@ -254,7 +257,7 @@ h3 {
 }
 
 .card2:hover {
-  background-image: linear-gradient(#fffffff3, #bad1e7f1),
+  background-image: linear-gradient(#ffffffc7, #bad1e7),
     url("../imgs/thanos-survivors.png");
 }
 
@@ -266,14 +269,16 @@ h3 {
 }
 
 .card3:hover {
-  background-image: linear-gradient(#fffffff3, #bad1e7f1),
+  background-image: linear-gradient(#ffffffc7, #bad1e7),
     url("../imgs/tictactoe.png");
 }
+
+/**********SKILLS**********/
 
 #skills {
   text-align: center;
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   background-color: #d6e1ef;
   color: #222a3f;
   padding: 10px 0 20px 0;
@@ -310,6 +315,7 @@ h3 {
 #oracleLogo {
   width: 120%;
 }
+
 #jsLogo {
   width: 90%;
 }
@@ -318,10 +324,12 @@ h3 {
   margin-top: 50px;
 }
 
+/**********CONTACT**********/
+
 #contact {
   width: 100%;
   text-align: center;
-  height: 100%;
+  min-height: 70vh;
   background-color: #2d3341;
   color: #fff;
   margin: 0;
@@ -329,31 +337,28 @@ h3 {
 }
 
 #contact .container {
-  margin-top: 100px;
+  margin-top: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
 }
 
 #contact a {
   color: white;
   text-decoration: none;
+  margin: 0 auto;
+  padding: 0 40px 0 40px;
 }
 
 #contact a:hover {
   color: rgb(202, 244, 250);
-  text-decoration: none;
-}
-
-.rowBlock {
-  font-size: 22px;
-  display: flex;
-  margin: 0 auto;
-  justify-content: center;
-  align-content: left;
 }
 
 #headshot {
-  width: 160px;
+  width: 145px;
   border-radius: 50%;
-  margin: 20px 0 0 0;
+  margin: 60px 0 0 0;
 }
 
 #footer {
@@ -365,9 +370,10 @@ h3 {
   flex-shrink: 0;
   position: relative;
   bottom: 0;
+  padding-top: 10px;
 }
 
-/*****************Responsiveness**********************/
+/**********Responsiveness**********/
 
 @media only screen and (max-width: 1416px) {
   #logo {
@@ -445,6 +451,58 @@ h3 {
 }
 
 @media only screen and (max-width: 599px) {
+  /*Mobile/Tablet Header*/
+  #logo {
+    margin: 0 0 0 5px;
+  }
+
+  #header {
+    height: 60px;
+  }
+
+  #burgerMenuContainer {
+    position: absolute;
+    bottom: 13px;
+    right: 20px;
+  }
+
+  .burgerMenu {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0 0 0;
+    border-radius: 10px;
+  }
+
+  #dropdown {
+    position: fixed;
+    width: 100%;
+    display: block;
+  }
+
+  #dropdownContent {
+    display: none;
+    position: relative;
+    top: 125px;
+    background-color: #566885;
+    padding: 5px 0 0 0;
+    height: 120px;
+    width: 100%;
+    z-index: 1;
+  }
+
+  #dropdownContent nav ul {
+    list-style-type: none;
+    text-decoration: none;
+    display: block;
+    padding: 0 0 10px 20px;
+    margin: 10px 0 0 0;
+  }
+
+  #dropdown:hover #dropdownContent {
+    display: block;
+  }
+
   #oracleLogo {
     margin-top: 60px;
   }
@@ -497,6 +555,7 @@ h3 {
       width: 190px;
     }
   }
+
   #oracleLogo {
     margin-top: 50px;
   }

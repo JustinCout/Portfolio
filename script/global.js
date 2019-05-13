@@ -1,9 +1,9 @@
 window.onload = function() {
   //Nav Links
-  let aboutLink = document.getElementById("aboutLink");
-  let projectsLink = document.getElementById("projectsLink");
-  let contactLink = document.getElementById("contactLink");
-  let skillsLink = document.getElementById("skillsLink");
+  let aboutLink = document.getElementsByClassName("aboutLink")[0];
+  let projectsLink = document.getElementsByClassName("projectsLink")[0];
+  let contactLink = document.getElementsByClassName("contactLink")[0];
+  let skillsLink = document.getElementsByClassName("skillsLink")[0];
 
   //Scroll animations
   aboutLink.addEventListener("click", function() {
@@ -43,44 +43,60 @@ window.onload = function() {
   $(".card1").hover(
     function() {
       $(".card1 p, .cardTitle, .cardBtn")
-        .slideDown("fast")
-        .css("display", "block");
+        .stop()
+        .slideDown("300ms")
+        .css("display", "flex");
     },
     function() {
-      $(".card1 p, .cardTitle, .cardBtn").css("display", "none");
+      $(".card1 p, .cardTitle, .cardBtn")
+        .stop()
+        .slideUp("fast")
+        .css("display", "none");
     }
   );
 
   $(".card2").hover(
     function() {
       $(".card2 p, .cardTitle2, .cardBtn2")
-        .slideDown("fast")
+        .stop()
+        .slideDown("300ms")
         .css("display", "flex");
     },
     function() {
-      $(".card2 p, .cardTitle2, .cardBtn2").css("display", "none");
+      $(".card2 p, .cardTitle2, .cardBtn2")
+        .stop()
+        .slideUp("fast")
+        .css("display", "none");
     }
   );
 
   $(".card3").hover(
     function() {
-      $(".card3 p")
-        .slideDown()
+      $(".card3 p, .cardTitle3, .cardBtn3")
+        .stop()
+        .slideDown("300ms")
         .css("display", "flex");
     },
     function() {
-      $(".card3 p").css("display", "none");
+      $(".card3 p, .cardTitle3, .cardBtn3")
+        .stop()
+        .slideUp("fast")
+        .css("display", "none");
     }
   );
 
   $(".card4").hover(
     function() {
-      $(".card4 p")
-        .slideDown()
+      $(".card4 p, .cardTitle4, .cardBtn4")
+        .stop()
+        .slideDown("300ms")
         .css("display", "flex");
     },
     function() {
-      $(".card4 p").css("display", "none");
+      $(".card4 p, .cardTitle4, .cardBtn4")
+        .stop()
+        .slideUp("fast")
+        .css("display", "none");
     }
   );
 };
