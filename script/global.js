@@ -38,4 +38,49 @@ window.onload = function() {
       "slow"
     );
   });
+
+  //Project card hover animations
+  $(".card1").hover(
+    function() {
+      $(".card1 p, .cardTitle, .cardBtn")
+        .slideDown("fast")
+        .css("display", "block");
+    },
+    function() {
+      $(".card1 p, .cardTitle, .cardBtn").css("display", "none");
+    }
+  );
+
+  $(".card2").hover(
+    function() {
+      $(".card2 p, .cardTitle2, .cardBtn2")
+        .slideDown("fast")
+        .css("display", "flex");
+    },
+    function() {
+      $(".card2 p, .cardTitle2, .cardBtn2").css("display", "none");
+    }
+  );
+
+  $(".card3").hover(
+    function() {
+      $(".card3 p")
+        .slideDown()
+        .css("display", "flex");
+    },
+    function() {
+      $(".card3 p").css("display", "none");
+    }
+  );
+
+  $(".card4").hover(
+    function() {
+      $(".card4 p")
+        .slideDown()
+        .css("display", "flex");
+    },
+    function() {
+      $(".card4 p").css("display", "none");
+    }
+  );
 };
