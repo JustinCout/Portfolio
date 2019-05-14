@@ -3,6 +3,6 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/justaynd/repositories/portfolio/
     - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp style.css $DEPLOYPATH
-    - /bin/cp global.js $DEPLOYPATH
-    - /bin/cp -R imgs $DEPLOYPATH
+    - /bin/cp css/style.css $DEPLOYPATH
+    - /bin/cp scripts/global.js $DEPLOYPATH
+    - /bin/cp /imgs $DEPLOYPATH
