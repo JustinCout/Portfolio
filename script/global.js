@@ -1,4 +1,4 @@
-window.onload = function() {
+window.onload = function () {
   //Nav Links
   let aboutLink = document.getElementsByClassName("aboutLink")[0];
   let projectsLink = document.getElementsByClassName("projectsLink")[0];
@@ -6,33 +6,29 @@ window.onload = function() {
   let skillsLink = document.getElementsByClassName("skillsLink")[0];
 
   //Scroll animations
-  aboutLink.addEventListener("click", function() {
-    $("html,body").animate(
-      {
+  aboutLink.addEventListener("click", function () {
+    $("html,body").animate({
         scrollTop: $("#about").offset().top
       },
       "slow"
     );
   });
-  projectsLink.addEventListener("click", function() {
-    $("html,body").animate(
-      {
+  projectsLink.addEventListener("click", function () {
+    $("html,body").animate({
         scrollTop: $("#projects").offset().top
       },
       "slow"
     );
   });
-  contactLink.addEventListener("click", function() {
-    $("html,body").animate(
-      {
+  contactLink.addEventListener("click", function () {
+    $("html,body").animate({
         scrollTop: $("#contact").offset().top
       },
       "slow"
     );
   });
-  skillsLink.addEventListener("click", function() {
-    $("html,body").animate(
-      {
+  skillsLink.addEventListener("click", function () {
+    $("html,body").animate({
         scrollTop: $("#skills").offset().top
       },
       "slow"
@@ -41,13 +37,13 @@ window.onload = function() {
 
   //Project card hover animations
   $(".card1").hover(
-    function() {
+    function () {
       $(".card1 p, .cardTitle, .cardBtn")
         .stop()
         .slideDown("300ms")
         .css("display", "flex");
     },
-    function() {
+    function () {
       $(".card1 p, .cardTitle, .cardBtn")
         .stop()
         .slideUp("fast")
@@ -56,13 +52,13 @@ window.onload = function() {
   );
 
   $(".card2").hover(
-    function() {
+    function () {
       $(".card2 p, .cardTitle2, .cardBtn2")
         .stop()
         .slideDown("300ms")
         .css("display", "flex");
     },
-    function() {
+    function () {
       $(".card2 p, .cardTitle2, .cardBtn2")
         .stop()
         .slideUp("fast")
@@ -71,13 +67,13 @@ window.onload = function() {
   );
 
   $(".card3").hover(
-    function() {
+    function () {
       $(".card3 p, .cardTitle3, .cardBtn3")
         .stop()
         .slideDown("300ms")
         .css("display", "flex");
     },
-    function() {
+    function () {
       $(".card3 p, .cardTitle3, .cardBtn3")
         .stop()
         .slideUp("fast")
@@ -86,17 +82,25 @@ window.onload = function() {
   );
 
   $(".card4").hover(
-    function() {
+    function () {
       $(".card4 p, .cardTitle4, .cardBtn4")
         .stop()
         .slideDown("300ms")
         .css("display", "flex");
     },
-    function() {
+    function () {
       $(".card4 p, .cardTitle4, .cardBtn4")
         .stop()
         .slideUp("fast")
         .css("display", "none");
     }
   );
+
+  //Mobile Menu
+  //Toggle class adds a class to an element
+  $("#burgerMenu").click(function () {
+    $(this).toggleClass('close');
+    $('#dropdownContent').slideToggle('1s');
+
+  });
 };
