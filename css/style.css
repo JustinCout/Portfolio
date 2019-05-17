@@ -301,7 +301,7 @@ h3 {
   width: 80%;
   margin-top: 50px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
   flex-flow: wrap;
 }
