@@ -78,7 +78,7 @@ window.onload = function () {
         .stop()
         .slideUp("fast")
         .css("display", "none");
-    }
+    }    
   );
 
   $(".card4").hover(
