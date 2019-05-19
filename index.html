@@ -12,7 +12,16 @@
 <body>
   <div class="flexContainer">
     <header id="header">
-      <a href="#"><img src="imgs/JC-logo2.png" alt="Justin Coutinho's logo" id="logo" /></a>
+      <a href="#"><img src="assets/JC-logo2.png" alt="Justin Coutinho's logo" id="logo" /></a>
+      <nav id="mainNav">
+          <ul>
+            <li><a class="aboutLink" href="#">ABOUT</a></li>
+            <li><a class="projectsLink" href="#">PROJECTS</a></li>
+            <li><a class="skillsLink" href="#">SKILLS</a></li>
+            <li><a class="contactLink" href="#">CONTACT</a></li>
+            <li><a href="assets/JustinCoutinho-WebResume.pdf">RESUME</a></li>
+          </ul>
+        </nav>
 
       <div id="dropdown">
         <div id="burgerMenu">
@@ -27,7 +36,7 @@
               <li><a class="projectsLink" href="#">PROJECTS</a></li>
               <li><a class="skillsLink" href="#">SKILLS</a></li>
               <li><a class="contactLink" href="#">CONTACT</a></li>
-              <li><a href="#">RESUME</a></li>
+              <li><a href="assets/JustinCoutinho-WebResume.pdf">RESUME</a></li>
             </ul>
           </nav>
         </div>
@@ -92,7 +101,7 @@
       <div class="projectCard card4"></div>
     </div>
   </section>
-  <section id="skills">
+  <section id="skills" class="transform">
     <h3>SKILLS</h3>
     <p>
       I'm passionate about creating applications that are creative,
@@ -102,40 +111,59 @@
       new technologies and growing as a developer.
     </p>
     <div class="container">
+      <div class="skillSection">
+        <h4>EXPERIENCED IN</h4>
       <div class="skillItem">
-        <img src="imgs/js.png" alt="JavaScript Logo" id="jsLogo" />
+        <img src="assets/js.png" alt="JavaScript Logo" id="jsLogo" />
       </div>
       <div class="skillItem">
-        <img src="imgs/html.png" alt="HTML Logo" id="htmlLogo" />
+        <img src="assets/html.png" alt="HTML Logo" id="htmlLogo" />
       </div>
       <div class="skillItem">
-        <img src="imgs/css3-logo-png-transparent.png" alt="CSS Logo" id="cssLogo" />
-      </div>
-
-      <div class="skillItem">
-        <img src="imgs/react.png" alt="React Logo" id="reactLogo" />
+        <img src="assets/css3-logo-png-transparent.png" alt="CSS Logo" id="cssLogo" />
       </div>
       <div class="skillItem">
-        <img src="imgs/node.png" alt="Node Logo" id="nodeLogo" />
-      </div>
-
-      <div class="skillItem">
-        <img src="imgs/php.png" alt="PHP Logo" id="phpLogo" />
-      </div>
-
-      <div class="skillItem">
-        <img src="imgs/git.png" alt="Git Logo" id="gitLogo" />
+          <img src="assets/xml.png" alt="XML Logo" id="xmlLogo" />
       </div>
       <div class="skillItem">
-        <img src="imgs/ASP.Net-512.png" alt="asp.net logo" id="aspLogo" />
+        <img src="assets/php.png" alt="PHP Logo" id="phpLogo" />
       </div>
       <div class="skillItem">
-        <img src="imgs/mySql.png" alt="mySql logo" id="mySqlLogo" />
+        <img src="assets/mySql.png" alt="mySql Logo" id="mySqlLogo" />
       </div>
       <div class="skillItem">
-        <img src="imgs/oracle.png" alt="oracle logo" id="oracleLogo" />
+        <img src="assets/git.png" alt="Git Logo" id="gitLogo" />
       </div>
     </div>
+
+    <div class="skillSection">
+        <h4>INTERESTED IN</h4>
+      <div class="skillItem">
+        <img src="assets/react.png" alt="React Logo" id="reactLogo" />
+      </div>
+      <div class="skillItem">
+          <img src="assets/python.png" alt="Python Logo" id="pythonLogo" />
+      </div>
+      <div class="skillItem">
+          <img src="assets/reactNative.png" alt="React Native Logo" id="reactNativeLogo" />
+      </div>
+    </div>
+
+    <div class="skillSection">
+        <h4>ALSO HAVE EXPERIENCE WITH</h4>  
+      <div class="skillItem">
+        <img src="assets/ASP.Net-512.png" alt="asp.net logo" id="aspLogo" />
+      </div>
+      <div class="skillItem">
+          <img src="assets/node.png" alt="Node Logo" id="nodeLogo" />
+        </div>
+      <div class="skillItem">
+        <img src="assets/oracle.png" alt="oracle logo" id="oracleLogo" />
+      </div>
+
+    </div>   
+    
+  </div>
   </section>
   <section id="contact">
     <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="100" width="100%" version="1.1"
@@ -150,7 +178,7 @@
         <a href="https://www.linkedin.com/in/justin-coutinho-a4506a102/"><i class="fab fa-linkedin"></i></a>
       </div>
     </div>
-    <img src="imgs/JustinCoutinhoHeadshot.jpg" alt="Headshot of Justin Coutinho" id="headshot" />
+    <img src="assets/JustinCoutinhoHeadshot.jpg" alt="Headshot of Justin Coutinho" id="headshot" />
     </div>
   </section>
   <footer id="footer">

@@ -54,10 +54,15 @@ body {
   width: 90px;
 }
 
-#header nav ul {
+#dropdownContent {
+  display: none;
+}
+
+#mainNav ul {
+  font-size: 18px;
   list-style-type: none;
   display: flex;
-  margin: 0 200px 0 0;
+  margin: 0 0 0 600px;
 }
 
 #header nav ul li a {
@@ -66,8 +71,10 @@ body {
   text-decoration: none;
 }
 
-#header a:hover {
-  color: #c8fffa;
+#header a:hover,
+#projects a:hover,
+#contact a:hover {
+  color: #ffdffa;
 }
 
 h1,
@@ -85,7 +92,7 @@ h3 {
   width: 100%;
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.623)),
-    url("../imgs/milky-way2.jpg");
+    url("../assets/milky-way2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   color: rgb(255, 255, 255);
@@ -238,7 +245,7 @@ h3 {
 }
 
 .card1 {
-  background: url("../imgs/tollo.jpg");
+  background: url("../assets/tollo.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 10% 0;
@@ -246,11 +253,11 @@ h3 {
 
 .card1:hover {
   background-image: linear-gradient(#ffffffc7, #bad1e7),
-    url("../imgs/tollo.jpg");
+    url("../assets/tollo.jpg");
 }
 
 .card2 {
-  background-image: url("../imgs/thanos-survivors.png");
+  background-image: url("../assets/thanos-survivors.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 0;
@@ -258,11 +265,11 @@ h3 {
 
 .card2:hover {
   background-image: linear-gradient(#ffffffc7, #bad1e7),
-    url("../imgs/thanos-survivors.png");
+    url("../assets/thanos-survivors.png");
 }
 
 .card3 {
-  background-image: url("../imgs/tictactoe.png");
+  background-image: url("../assets/tictactoe.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 0;
@@ -270,7 +277,7 @@ h3 {
 
 .card3:hover {
   background-image: linear-gradient(#ffffffc7, #bad1e7),
-    url("../imgs/tictactoe.png");
+    url("../assets/tictactoe.png");
 }
 
 /**********SKILLS**********/
@@ -283,19 +290,10 @@ h3 {
   color: #222a3f;
   padding: 10px 0 20px 0;
   z-index: 2;
+  transform-style: preserve-3d;
+  transform: perspective(800px); 
 }
 
-#skills p {
-  margin: 100px 20% 0 20%;
-  font-size: 18px;
-}
-
-.skillItem {
-  width: 110px;
-  height: 200px;
-  margin: 0 60px 5px 0px;
-  z-index: 1;
-}
 
 #skills .container {
   width: 80%;
@@ -304,26 +302,103 @@ h3 {
   flex-direction: row;
   justify-content: space-around;
   flex-flow: wrap;
+  transition: all 0.8s ease;
 }
+
+#skills p {
+  margin: 100px 20% 0 20%;
+  font-size: 18px;
+  transition: all 0.8s ease;
+}
+
+.skillSection h4 {
+  font-size: 20px;
+  text-align: center;
+  width: 130px;
+  height: auto;
+  margin: 10px 30px 0 0;
+  transition: all 0.8s ease;
+}
+
+.skillItem {
+  width: 90px;
+  height: 100px;
+  margin: 0 40px 0 10px;
+  z-index: 1;
+  transition: all 2s ease;
+}
+
+.skillSection {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-flow: wrap;
+  border-bottom: 2px solid #222a3f;
+  padding: 20px 0 20px 0;
+}
+
+#skills.transform h3 {
+  opacity:0;
+  transform: translate3d(0, 0, 400px) rotateY(-40deg);
+}
+#skills.transform p {
+  opacity:0;
+  transform: translate3d(0, 0, 400px) rotateY(40deg);
+}
+#skills.transform .skillItem {
+  opacity:0;
+  transform: translate3d(0, 0, 400px) rotateY(40deg);
+}
+
+/* Logo Sizing and Margin */
 
 #htmlLogo,
 #cssLogo,
-#phpLogo,
 #reactLogo,
-#nodeLogo,
-#gitLogo,
-#aspLogo,
-#mySqlLogo,
-#oracleLogo {
+#aspLogo {
   width: 120%;
 }
 
-#jsLogo {
-  width: 90%;
+#pythonLogo {
+  width: 150%;
+  margin: 40px 0 0 0;
 }
 
-#oracleLogo {
-  margin-top: 50px;
+#reactNativeLogo {
+  width: 180%;
+  margin: 10px 0 0 0;
+}
+
+#gitLogo,
+#mySqlLogo {
+  width: 100%;
+}
+
+#xmlLogo {
+  width: 90%;
+  margin: 10px 0 0 0;
+}
+
+#phpLogo {
+  width: 100%;
+  margin: 20px 0 0 0;
+}
+
+#jsLogo {
+  width: 80%;
+  margin: 5px 0 0 0;
+}
+
+#oracleLogo,
+#nodeLogo {
+  margin: 40px 0 0 0;
+  width: 120%;
+}
+
+#nodeLogo {
+  margin: 20px 0 0 0;
+  width: 120%;
 }
 
 /**********CONTACT**********/
@@ -351,10 +426,6 @@ h3 {
   text-decoration: none;
   margin: 0 auto;
   padding: 0 40px 0 40px;
-}
-
-#contact a:hover {
-  color: rgb(202, 244, 250);
 }
 
 #contactInfo .fab,
@@ -461,8 +532,11 @@ h3 {
 }
 
 @media only screen and (max-width: 599px) {
-
   /*Mobile/Tablet Header*/
+  #mainNav {
+    display: none;
+  }
+
   #logo {
     margin: 0 0 0 5px;
   }
@@ -548,9 +622,7 @@ h3 {
 @media only screen and (max-width: 539px) {
   .visitBtn {
     margin: 300px 0 0 0;
-
   }
-
 
   #reactLogo {
     margin: 0 0 0 0;
@@ -565,7 +637,6 @@ h3 {
     height: 40px;
     margin: 50px 30px 10px 0px;
   }
-
 }
 
 @media only screen and (max-width: 446px) {
@@ -592,7 +663,6 @@ h3 {
 
   .projectCard p {
     font-size: 14px;
-
   }
 
   #skills p {
@@ -602,7 +672,6 @@ h3 {
 
   #skills .container {
     padding: 0 4px 0 4px;
-
   }
 
   #contact .container {
