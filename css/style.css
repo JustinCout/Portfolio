@@ -128,23 +128,24 @@ h3 {
 }
 
 .animation-type1 {
-  animation: type 1.5s steps(40) 1s 1 normal both, cursor 0.5s steps(40) normal;
+  animation: type 1.5s steps(40) 1s 1 normal both, cursor 0.5s steps(40) 2 normal;
+  animation-delay: 0.5s;
 }
 
 .animation-type2 {
-  animation: type 1.5s steps(40) 1s 1 normal both, cursor 0.5s steps(40) normal;
-  animation-delay: 2.5s;
+  animation: type 1.5s steps(40) 1s 1 normal both, cursor 0.5s steps(40) 3 normal;
+  animation-delay: 2.4s;
 }
 
 .animation-type3 {
-  animation: type 1.5s steps(40) 1s 1 normal both, cursor 0.5s steps(40) normal;
-  animation-delay: 4.5s;
+  animation: type 1.5s steps(40) 1s 1 normal both, cursor 0.5s steps(40) 3 normal;
+  animation-delay: 4.1s;
 }
 
 .animation-type4 {
   animation: type-short 1.5s steps(40) 1s 1 normal both,
     cursor 0.5s steps(40) infinite normal;
-  animation-delay: 6.5s;
+  animation-delay: 6s;
 }
 
 @keyframes type {
@@ -442,7 +443,7 @@ h3 {
 }
 
 #contact h3 {
-  transition: all 1.5s ease;
+  transition: all 0.8s ease;
 }
 
 #contact a {
@@ -453,7 +454,7 @@ h3 {
 }
 
 #contactInfo {
-  transition: all 1.5s ease;
+  transition: all 1s ease;
 }
 
 #contactInfo .fab,
@@ -470,7 +471,7 @@ h3 {
   width: 145px;
   border-radius: 50%;
   margin: 60px 0 0 0;
-  transition: all 1.5s ease;
+  transition: all 1s ease;
 }
 
 #contact.transform h3 {
