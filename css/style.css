@@ -108,6 +108,12 @@ h3 {
   height: 230px;
   margin: 25vh 0 0 0;
   padding: 4vh 2vh 0 2vh;
+  transition: all 1s ease;
+}
+
+#about.transform #aboutMsgContainer {
+  opacity: 0;
+  transform: translate3d(0, 0, 400px) rotateX(100deg);
 }
 
 .typing {
@@ -122,22 +128,22 @@ h3 {
 }
 
 .animation-type1 {
-  animation: type 1.5s steps(40) 1s 1 normal both, cursor 0.5s steps(10) normal;
+  animation: type 1.5s steps(40) 1s 1 normal both, cursor 0.5s steps(40) normal;
 }
 
 .animation-type2 {
-  animation: type 1.5s steps(40) 1s 1 normal both, cursor 0.5s steps(10) normal;
+  animation: type 1.5s steps(40) 1s 1 normal both, cursor 0.5s steps(40) normal;
   animation-delay: 2.5s;
 }
 
 .animation-type3 {
-  animation: type 1.5s steps(40) 1s 1 normal both, cursor 0.5s steps(10) normal;
+  animation: type 1.5s steps(40) 1s 1 normal both, cursor 0.5s steps(40) normal;
   animation-delay: 4.5s;
 }
 
 .animation-type4 {
   animation: type-short 1.5s steps(40) 1s 1 normal both,
-    cursor 1s steps(10) infinite normal;
+    cursor 0.5s steps(40) infinite normal;
   animation-delay: 6.5s;
 }
 
@@ -195,6 +201,11 @@ h3 {
   height: 300px;
   border: 2px solid #b4c2ec;
   margin: 5px;
+  transition: all 0.8s ease;
+}
+
+#projects h2 {
+  transition: all 0.8s ease;
 }
 
 .projectCard p {
@@ -203,6 +214,16 @@ h3 {
   font-size: 16px;
   text-align: left;
   padding: 5px;
+}
+
+#projects.transform .projectCard {
+  opacity: 0;
+  transform: translate3d(0, 0, 500px) rotateX(80deg);
+}
+
+#projects.transform h2 {
+  opacity: 0;
+  transform: translate3d(0, 0, 300px) rotateX(80deg);
 }
 
 .cardTitle,
@@ -291,9 +312,8 @@ h3 {
   padding: 10px 0 20px 0;
   z-index: 2;
   transform-style: preserve-3d;
-  transform: perspective(800px); 
+  transform: perspective(800px);
 }
-
 
 #skills .container {
   width: 80%;
@@ -325,7 +345,7 @@ h3 {
   height: 100px;
   margin: 0 40px 0 10px;
   z-index: 1;
-  transition: all 2s ease;
+  transition: all 1.5s ease;
 }
 
 .skillSection {
@@ -339,15 +359,15 @@ h3 {
 }
 
 #skills.transform h3 {
-  opacity:0;
+  opacity: 0;
   transform: translate3d(0, 0, 400px) rotateY(-40deg);
 }
 #skills.transform p {
-  opacity:0;
+  opacity: 0;
   transform: translate3d(0, 0, 400px) rotateY(40deg);
 }
 #skills.transform .skillItem {
-  opacity:0;
+  opacity: 0;
   transform: translate3d(0, 0, 400px) rotateY(40deg);
 }
 
@@ -421,11 +441,19 @@ h3 {
   flex-flow: wrap;
 }
 
+#contact h3 {
+  transition: all 1.5s ease;
+}
+
 #contact a {
   color: white;
   text-decoration: none;
   margin: 0 auto;
   padding: 0 40px 0 40px;
+}
+
+#contactInfo {
+  transition: all 1.5s ease;
 }
 
 #contactInfo .fab,
@@ -442,6 +470,22 @@ h3 {
   width: 145px;
   border-radius: 50%;
   margin: 60px 0 0 0;
+  transition: all 1.5s ease;
+}
+
+#contact.transform h3 {
+  opacity: 0;
+  transform: translate3d(0, 0, 400px) rotateY(80deg);
+}
+
+#contact.transform #contactInfo {
+  opacity: 0;
+  transform: translate3d(0, 0, 400px) rotateY(80deg);
+}
+
+#contact.transform #headshot {
+  opacity: 0;
+  transform: translate3d(0, 0, 400px) rotateY(80deg);
 }
 
 #footer {

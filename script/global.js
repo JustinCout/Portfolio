@@ -108,12 +108,46 @@ window.onload = function() {
     $("#dropdownContent").slideToggle("1s");
   });
 
-  //Content Animations
+  //Content Animations//
+  
+  //About
+  function aboutAnimation() {
+    let about = $("#about");
+    if (about.hasClass("transform")) about.removeClass("transform");
+  }
+  aboutAnimation();
+
+  //Projects
+  function projectsAnimation() {
+    let projects = $("#projects");
+    let projectsOffset = projects.offset().top - 200;
+    $(document).on("scroll", function() {
+      if ($(document).scrollTop() > projectsOffset)
+        projects.removeClass("transform");
+    });
+  }
+  projectsAnimation();
+
+  //Skills
+  function skillsAnimation() {
     let skills = $("#skills");
-    let skillsOffset = skills.offset().top - 100;
+    let skillsOffset = skills.offset().top - 150;
 
     $(document).on("scroll", function() {
-     console.log(skillsOffset);
-      if ($(document).scrollTop() > skillsOffset) skills.removeClass("transform");
+      if ($(document).scrollTop() > skillsOffset)
+        skills.removeClass("transform");
     });
+  }
+  skillsAnimation();
+
+  //Contact
+  function contactAnimation() {
+    let contact = $("#contact");
+    let contactOffset = contact.offset().top - 600;
+    $(document).on("scroll", function() {
+      if ($(document).scrollTop() > contactOffset)
+        contact.removeClass("transform");
+    });
+  }
+  contactAnimation();
 };
