@@ -44,7 +44,7 @@ window.onload = function() {
     function() {
       $(".card1 p, .cardTitle, .cardBtn")
         .stop()
-        .slideDown("300ms")
+        .slideDown(250)
         .css("display", "flex");
     },
     function() {
@@ -59,7 +59,7 @@ window.onload = function() {
     function() {
       $(".card2 p, .cardTitle2, .cardBtn2")
         .stop()
-        .slideDown("300ms")
+        .slideDown(250)
         .css("display", "flex");
     },
     function() {
@@ -74,7 +74,7 @@ window.onload = function() {
     function() {
       $(".card3 p, .cardTitle3, .cardBtn3")
         .stop()
-        .slideDown("300ms")
+        .slideDown(250)
         .css("display", "flex");
     },
     function() {
@@ -89,7 +89,7 @@ window.onload = function() {
     function() {
       $(".card4 p, .cardTitle4, .cardBtn4")
         .stop()
-        .slideDown("300ms")
+        .slideDown(250)
         .css("display", "flex");
     },
     function() {
@@ -109,7 +109,7 @@ window.onload = function() {
   });
 
   //Content Animations//
-  
+
   //About
   function aboutAnimation() {
     let about = $("#about");
@@ -120,7 +120,7 @@ window.onload = function() {
   //Projects
   function projectsAnimation() {
     let projects = $("#projects");
-    let projectsOffset = projects.offset().top - 200;
+    let projectsOffset = projects.offset().top - 500;
     $(document).on("scroll", function() {
       if ($(document).scrollTop() > projectsOffset)
         projects.removeClass("transform");
@@ -131,7 +131,7 @@ window.onload = function() {
   //Skills
   function skillsAnimation() {
     let skills = $("#skills");
-    let skillsOffset = skills.offset().top - 150;
+    let skillsOffset = skills.offset().top - 500;
 
     $(document).on("scroll", function() {
       if ($(document).scrollTop() > skillsOffset)
