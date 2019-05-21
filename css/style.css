@@ -209,6 +209,7 @@ h3 {
   border: 2px solid #b4c2ec;
   margin: 5px;
   transition: all 0.8s ease;
+  cursor: pointer;
 }
 
 #projects h2 {
@@ -241,6 +242,7 @@ h3 {
   justify-content: center;
   font-size: 28px;
   line-height: 0;
+  cursor: pointer;
 }
 
 .cardBtn,
@@ -258,6 +260,7 @@ h3 {
   top: 20px;
   color: #1e6577;
   font-size: 18px;
+  cursor: pointer;
 }
 
 .cardBtn2 {
@@ -270,6 +273,7 @@ h3 {
 .cardBtn4:hover {
   background: #222a3f;
   color: white;
+  cursor: pointer;
 }
 
 .card1 {
@@ -365,13 +369,17 @@ h3 {
   padding: 20px 0 20px 0;
 }
 
+#skills h3 {
+  transition: all 1s ease;
+}
+
 #skills.transform h3 {
   opacity: 0;
-  transform: translate3d(0, 0, 400px) rotateY(-40deg);
+  transform: translate3d(0, 0, 200px) rotateX(20deg);
 }
 #skills.transform p {
   opacity: 0;
-  transform: translate3d(0, 0, 400px) rotateY(40deg);
+  transform: translate3d(0, 0, 300px) rotateX(40deg);
 }
 #skills.transform .skillItem {
   opacity: 0;
@@ -668,10 +676,10 @@ h3 {
 
   #skills h4 {
     font-size: 18px;
-    margin:0 auto;
-    padding:0;
-    width:100%;
-    height:auto;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: auto;
     display: flex;
 
     justify-content: center;
@@ -680,21 +688,21 @@ h3 {
 
   .skillSection {
     width: 100%;
-    height:auto;
+    height: auto;
     display: flex;
     flex-direction: column;
 
-    margin:0 auto;
+    margin: 0 auto;
     justify-content: center;
     flex-flow: wrap;
-    padding:0;
-}
+    padding: 0;
+  }
 
   .skillItem {
     width: 70px;
     height: 80px;
     margin: 10px 0 0 0;
-    padding:10px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -702,7 +710,7 @@ h3 {
   }
 
   #pythonLogo {
-    margin:0 10px 15px 10px;
+    margin: 0 10px 15px 10px;
   }
 }
 
@@ -745,7 +753,7 @@ h3 {
     width: 60px;
     height: 70px;
     margin: 7px 0 0 0;
-    padding:7px;
+    padding: 7px;
     display: flex;
     flex-direction: column;
     justify-content: center;
