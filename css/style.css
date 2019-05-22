@@ -264,7 +264,11 @@ h3 {
 }
 
 .cardBtn2 {
-  top: -10px;
+  top: 10px;
+}
+
+.cardBtn4 {
+  top: 0;
 }
 
 .cardBtn:hover,
@@ -312,12 +316,24 @@ h3 {
     url("../assets/tictactoe.png");
 }
 
+.card4 {
+  background-image: url("../assets/Critical-Debates.png");
+  background-size: 175%;
+  background-repeat: no-repeat;
+  background-position: 50% 40%;
+}
+
+.card4:hover {
+  background-image: linear-gradient(#ffffffc7, #bad1e7),
+    url("../assets/Critical-Debates.png");
+}
+
 /**********SKILLS**********/
 
 #skills {
   text-align: center;
   width: 100%;
-  height: 100%;
+  height: auto;
   background-color: #d6e1ef;
   color: #222a3f;
   padding: 10px 0 20px 0;
@@ -670,9 +686,10 @@ h3 {
 }
 
 @media only screen and (max-width: 539px) {
-  .visitBtn {
-    margin: 300px 0 0 0;
+  .cardBtn2 {
+    top: 10px;
   }
+
 
   #skills h4 {
     font-size: 18px;
@@ -739,6 +756,23 @@ h3 {
   .projectCard p {
     font-size: 14px;
   }
+
+  .cardBtn4 {
+    margin:0;
+    position: relative;
+    top:0;
+  }
+
+  .cardBtn4 p {
+    padding: 0 1px 0 1px;
+    margin: 0;
+  }
+
+  .cardTitle4 {
+    padding:0;
+    margin:20px 0 20px 0;
+  }
+
 
   #skills p {
     padding: 0;
