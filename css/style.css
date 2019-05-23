@@ -11,21 +11,19 @@ html {
   box-sizing: border-box;
   font-size: 16px;
   font-family: "Crete Round", serif;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-}
-
-html,
-body {
+  width: 100%;
   height: 100%;
 }
 
 .flexContainer {
-  flex: 1 0 auto;
   display: flex;
   flex-direction: column;
 }
@@ -484,7 +482,7 @@ h3 {
 }
 
 #contactInfo {
-  transition: all 1s ease;
+  transition: all 0.8s ease;
 }
 
 #contactInfo .fab,
@@ -516,7 +514,7 @@ h3 {
 
 #contact.transform #headshot {
   opacity: 0;
-  transform: translate3d(0, 0, 400px) rotateY(80deg);
+  transform: translate3d(0, 0, 400px) rotateX(80deg);
 }
 
 #footer {
@@ -624,19 +622,20 @@ h3 {
   #dropdownContent {
     display: none;
     position: absolute;
-    top: 62px;
+    top: 60px;
     background-color: #566885;
     padding: 5px 0 0 0;
-    height: 120px;
+    height: 140px;
     width: 100%;
   }
 
   #dropdownContent nav ul {
     list-style-type: none;
+    font-size: 20px;
     text-decoration: none;
     display: block;
-    padding: 0 0 10px 20px;
-    margin: 10px 0 0 0;
+    padding: 0 0 5px 10px;
+    margin: 5px 0 0 0;
   }
 
   .skillItem {
@@ -686,9 +685,6 @@ h3 {
 }
 
 @media only screen and (max-width: 539px) {
-  body {
-    width: auto;
-  }
   .cardBtn2 {
     top: 10px;
   }
@@ -734,9 +730,6 @@ h3 {
 }
 
 @media only screen and (max-width: 446px) {
-  body {
-    width: auto;
-  }
   #aboutMsgContainer {
     width: 320px;
     height: 120px;
@@ -778,24 +771,41 @@ h3 {
     margin: 20px 0 20px 0;
   }
 
+  .skillSection {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-flow: wrap;
+    margin: 0 auto;
+  }
+
+  .skillSection:nth-of-type(2),
+  .skillSection:nth-of-type(3) {
+    padding: 0 50px 0 0;
+  }
+
   #skills p {
     padding: 0;
     margin: 100px 4px 0 4px;
   }
 
   #skills .container {
-    padding: 0 4px 0 4px;
+    width: 100%;
   }
 
   .skillItem {
-    width: 60px;
-    height: 70px;
-    margin: 7px 0 0 0;
-    padding: 7px;
+    width: 20%;
+    margin: 7px 5px 5px 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
+  }
+
+  #oracleLogo {
+    margin: 0 0 1px 4px;
   }
 
   #contact .container {
@@ -804,5 +814,14 @@ h3 {
 
   #contact a {
     padding: 15px;
+  }
+
+  #contactInfo .fab,
+  .fas {
+    font-size: 60px;
+  }
+
+  #headshot {
+    width: 30%;
   }
 }
