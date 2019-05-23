@@ -1,43 +1,53 @@
 window.onload = function() {
   //Nav Links
-  let aboutLink = document.getElementsByClassName("aboutLink")[0];
-  let projectsLink = document.getElementsByClassName("projectsLink")[0];
-  let contactLink = document.getElementsByClassName("contactLink")[0];
-  let skillsLink = document.getElementsByClassName("skillsLink")[0];
-
   //Scroll animations
-  aboutLink.addEventListener("click", function() {
-    $("html,body").animate(
-      {
-        scrollTop: $("#about").offset().top
-      },
-      "slow"
-    );
-  });
-  projectsLink.addEventListener("click", function() {
-    $("html,body").animate(
-      {
-        scrollTop: $("#projects").offset().top
-      },
-      "slow"
-    );
-  });
-  contactLink.addEventListener("click", function() {
-    $("html,body").animate(
-      {
-        scrollTop: $("#contact").offset().top
-      },
-      "slow"
-    );
-  });
-  skillsLink.addEventListener("click", function() {
-    $("html,body").animate(
-      {
-        scrollTop: $("#skills").offset().top
-      },
-      "slow"
-    );
-  });
+  let aboutLink = document.querySelectorAll(".aboutLink");
+  for (let i = 0; i < aboutLink.length; i++) {
+    aboutLink[i].addEventListener("click", function() {
+      $("html,body").animate(
+        {
+          scrollTop: $("#about").offset().top
+        },
+        "slow"
+      );
+    });
+  }
+
+  let projectsLink = document.querySelectorAll(".projectsLink");
+  for (let i = 0; i < projectsLink.length; i++) {
+    projectsLink[i].addEventListener("click", function() {
+      $("html,body").animate(
+        {
+          scrollTop: $("#projects").offset().top
+        },
+        "slow"
+      );
+    });
+  }
+
+  let contactLink = document.querySelectorAll(".contactLink");
+  for (let i = 0; i < contactLink.length; i++) {
+    contactLink[i].addEventListener("click", function() {
+      $("html,body").animate(
+        {
+          scrollTop: $("#contact").offset().top
+        },
+        "slow"
+      );
+    });
+  }
+
+  let skillsLink = document.querySelectorAll(".skillsLink");
+  for (let i = 0; i < skillsLink.length; i++) {
+    skillsLink[i].addEventListener("click", function() {
+      $("html,body").animate(
+        {
+          scrollTop: $("#skills").offset().top
+        },
+        "slow"
+      );
+    });
+  }
 
   //Project card hover animations
   $(".card1").hover(
