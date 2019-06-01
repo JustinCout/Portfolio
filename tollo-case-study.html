@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Justin Coutinho</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/tollo-case-study.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="page-container">
+      <header id="header">
+        <a href="#"
+          ><img src="assets/JC-logo2.png" alt="Justin Coutinho's logo" id="logo"
+        /></a>
+        <nav id="mainNav">
+          <ul>
+            <li>
+              <a class="homeLink" href="http://justincoutinho.com/">HOME</a>
+            </li>
+            <li>
+              <a class="aboutLink" href="http://justincoutinho.com/#about"
+                >ABOUT</a
+              >
+            </li>
+            <li>
+              <a class="projectsLink" href="http://justincoutinho.com/#projects"
+                >PROJECTS</a
+              >
+            </li>
+            <li>
+              <a class="skillsLink" href="http://justincoutinho.com/#skills"
+                >SKILLS</a
+              >
+            </li>
+            <li>
+              <a class="contactLink" href="http://justincoutinho.com/#contact"
+                >CONTACT</a
+              >
+            </li>
+            <li><a href="assets/JustinCoutinho-WebResume.pdf">RESUME</a></li>
+          </ul>
+        </nav>
+
+        <div id="dropdown">
+          <div id="burgerMenu">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="line line3"></div>
+          </div>
+          <div id="dropdownContent">
+            <nav>
+              <ul>
+                <li>
+                  <a class="homeLink" href="http://justincoutinho.com/">HOME</a>
+                </li>
+                <li><a class="aboutLink" href="#about">ABOUT</a></li>
+                <li><a class="projectsLink" href="#projects">PROJECTS</a></li>
+                <li><a class="skillsLink" href="#skills">SKILLS</a></li>
+                <li><a class="contactLink" href="#contact">CONTACT</a></li>
+                <li>
+                  <a href="assets/JustinCoutinho-WebResume.pdf">RESUME</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <h1 id="tollo-title">Tollo</h1>
+      <section id="description">
+        <div class="section-container">
+            <img
+            src="assets/tollo-profile.png"
+            alt="Tollo profile page"
+            id="tollo-profile-img"
+          />
+          <p>
+            Tollo is a personalized fitness application to assist people through
+            their fitness journey. Users can create a profile, input their
+            measurements, set goals, create workout plans, set reminders, and
+            more. Tollo is designed to help members succeed in leading a healthy
+            lifestyle and achieving their fitness goals.
+          </p>
+ 
+          <p>
+            This application was developed on a team of four people. Each team
+            member is a full stack developer and created a total of 9
+            data-driven features. Aside from that, we each chose areas of focus
+            to fulfill a well-rounded application. Justin and Beverly took the
+            lead on the front-end and design of the application. Jing and Delan
+            focused on the back-end and server-side aspects of the application
+            including database structure, user login and accounts, and hosting.
+            We all had areas of focus that we took ownership for, however, the
+            project was a large collaboration in every aspect.
+          </p>
+
+        </div>
+      </section>
+      <section id="features">
+        <div class="section-container">
+          <h2>Features and Roles</h2>
+          <p>
+            I was responsible for designing the application including the logo,
+            colours, and mock-ups, as well as I created 3 data-driven features.
+            These features include reminders, notifications, and the about
+            section in the profile view. I took ownership of the profile page,
+            as well as I designed the entire application along with Beverly.
+          </p>
+          <p>
+            The reminders feature is located in the profile page and allows a
+            user to create, edit, view, and delete reminders. Notifications and
+            reminders work together, as when the date and time of a reminder is
+            set, it sends the message to the notifications table. I used an ajax
+            call to check the notifications table on an interval to see if any
+            new notifications were added. When there is a new notification to
+            display, it updates the number badge located in the header. A user
+            can then check notifications by clicking the icon in the header to
+            access a dropdown menu. Last, notifications are deleted once the
+            user clicks the clear button.
+          </p>
+          <p>
+            In the profile view, the first tab is the About section. It is
+            designed so that when the user fills out information about
+            themselves including their name, gender, age, and bio, they can only
+            update it afterwards. This prevents the user from creating multiple
+            about rows in the database, as when they update this section, it
+            will update the only row that has their information by finding the
+            user ID foreign key.
+          </p>
+        </div>
+      </section>
+      <section id="design">
+        <div class="section-container">
+          <h2>Design Process</h2>
+          <div id="design-text">
+            <p> 
+              <img src="assets/tollo-logo.png" alt="Tollo logo" id="tollo-logo" />
+              The design process started with wireframes that were initially
+              hand-drawn. We then took the structure of the wireframes and
+              brought the design to life in Adobe Photoshop. Finally, the
+              mock-up was coded with HTML and CSS. The styling of the website is
+              a mixture of Bootstrap and custom CSS. Last, the logo was done in photoshop, 
+              taking a silhouette of a flexing arm into a white circular background. The objective
+              of the logo was to match the branding of a fitness-based audience, as well as it 
+              stands out as a universal symbol for strength.
+            </p>
+          </div>
+          <div class="mock-up-container">
+            <h3>First Draft</h3>
+            <img
+              src="assets/Tollo-mockup-home.jpg"
+              alt="First Tollo mock-up"
+              id="tollo-old"
+            />
+          </div>
+          <div class="mock-up-container">
+            <h3>Evolution</h3>
+            <img
+              src="assets/tollo-fullpage.jpg"
+              alt="Home page of Tollo"
+              id="tollo-home"
+            />
+          </div>
+        </div>
+      </section>
+      <section id="challenges">
+        <div class="section-container">
+          <h2>Challenges</h2>
+          <p>
+            The main challenge we faced in this project was the organization of
+            code when multiple people were working on the same file.
+            Structurally, we followed MVC (Model View Controller) and
+            established the file structure early on to keep everything in order.
+            However, order was difficult to maintain in global styling sheets,
+            and the notifications controllers because there were at least 2
+            contributors in those files. The notifications controller brought
+            together objects from both the reminders and goals features, and
+            goals was not one of my features.
+          </p>
+          <p>
+            We overcame these challenges by going over the code together and
+            communicating. We then were able to agree on a structure that we
+            could both read and organized the code in a logical manner. Comments
+            crucial to do this to make the code more readable. We used comments
+            to divide sections and explain exactly what each function was doing.
+            We achieved a well organized controller that brought together three
+            classes with comments and a naming convention.
+          </p>
+        </div>
+      </section>
+      <section id="learning">
+        <div class="section-container">
+          <h2>Learning Outcomes</h2>
+          <p>
+            Out of all the projects I have done so far, I learned the most from
+            Tollo. In a group project that combines all the aspects of a
+            data-driven application, communication is key. This means telling
+            your group what you are working on, when you plan on completing the
+            MVP, and when you are going to push to the repository. Repository
+            communications and maintenance is critical in a group project. For
+            instance, if you don’t communicate and comment all of your commits,
+            it gets really hectic and you are risking losing work. It is
+            important that everyone pushes regularly whenever they reach a small
+            milestone, and everyone pulls to ensure they are working on the most
+            up to date conflict. When there is a merge conflict, it is important
+            to communicate with your team and ensure you do not overwrite
+            another members work.
+          </p>
+                  <a id="visitBtn" href="http://tollo.justincoutinho.com/index.php">VISIT</a>
+
+        </div>
+        
+      </section>
+    </div>
+    <footer id="footer">
+      <p>© 2019 Justin Coutinho</p>
+    </footer>
+    <!-- Scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script/global.js"></script>
+  </body>
+</html>

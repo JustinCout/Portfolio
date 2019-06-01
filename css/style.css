@@ -78,9 +78,7 @@ body {
   color: #ffdffa;
 }
 
-h1,
-h2,
-h3 {
+.title {
   font-size: 34px;
   border-bottom: double;
   width: 160px;
@@ -625,7 +623,7 @@ h3 {
     top: 60px;
     background-color: #566885;
     padding: 5px 0 0 0;
-    height: 140px;
+    height: 160px;
     width: 100%;
   }
 

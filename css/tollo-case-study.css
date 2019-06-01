@@ -1,0 +1,140 @@
+.page-container {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  background-color: #d1ddfc;
+  font-size: 18px;
+}
+
+#tollo-title {
+  margin: 100px 0 0 0;
+  align-self: center;
+  font-size: 40px;
+}
+
+#description {
+  height:85vh;
+}
+
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  padding: 10px 4% 10px 4%;
+}
+.section-container h2 {
+  font-size: 30px;
+  margin: 0 auto;
+}
+
+#tollo-profile-img {
+  width: 74%;
+  height: auto;
+  margin: 0 auto;
+  padding:0;
+  border:3px solid #222a3fb0;
+  border-radius: 5px;
+}
+
+/* FEATURES */
+#features {
+  background: #91adf8;
+  padding:40px 20px 40px 20px;
+}
+
+
+/* DESIGN */
+
+#design {
+  background: #222a3f;
+  color: #fff;
+  padding:40px 20px 40px 20px;
+}
+
+#design-text {
+  display: flex;
+  flex-direction: row;
+  width:100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+#tollo-logo {
+  width: 140px;
+  height: auto;
+  padding: 0 0 0 0;
+  margin:0 0 0 0;
+  float: left;
+}
+
+#design-text p {
+  width:90%;
+  height:auto;
+  padding:0;
+}
+
+.mock-up-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  margin:0 auto;
+  padding:10px 0 10px 0;
+}
+
+.mock-up-container h3 {
+  display: flex;
+  flex-direction: column;
+  margin:0 auto;
+  padding:0 0 20px 0;
+
+}
+
+
+#tollo-old {
+  margin:0 auto;
+  width:40%;
+  height: auto;
+}
+
+#tollo-home {
+  margin:0 auto;
+  width: 55%;
+  height: auto;
+}
+
+/* CHALLENGES */
+#challenges {
+  background: #91adf8;
+  padding:40px 20px 40px 20px;
+}
+
+/* LEARNING */
+#learning {
+  padding:40px 20px 40px 20px;
+}
+
+#visitBtn {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  border: 2px solid #023846;
+  padding: 13px 9px 13px 9px;
+  width: 80px;
+  margin: 0 auto;
+  position: relative;
+  top: 20px;
+  color: #023846;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#visitBtn:hover {
+  background: #222a3f;
+  color: white;
+  cursor: pointer;
+}
