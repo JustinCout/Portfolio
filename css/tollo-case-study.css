@@ -4,8 +4,11 @@
 }
 
 body {
-  background-color: #d1ddfc;
   font-size: 18px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.555), rgba(0, 0, 0, 0.733)),
+    url(../assets/tollo-background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 #header {
@@ -18,10 +21,6 @@ body {
 
 #description {
   min-height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.555), rgba(0, 0, 0, 0.733)),
-    url(../assets/tollo-background.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   color: white;
   z-index: 1;
 }
@@ -36,8 +35,8 @@ body {
 }
 #page-description {
   margin: 150px auto;
-  width:100%;
-  background: #222a3fe3;
+  width:90%;
+  background: #222a3fe8;
   border: 2px solid #222a3f;
   border-radius: 10px;
   padding: 0 30px 30px 30px;
@@ -55,9 +54,11 @@ body {
 
 /* FEATURES */
 #features {
-  background: #91adf8;
+  background-color: #d1ddfc;
+  color: #1d2436;
   padding: 40px 20px 40px 20px;
   z-index: 1;
+  margin:0 0 50px 0;
 }
 
 /* DESIGN */
@@ -66,6 +67,7 @@ body {
   background: #222a3f;
   color: #fff;
   padding: 40px 20px 40px 20px;
+  margin:0 0 50px 0;
 }
 
 #design-text {
@@ -77,7 +79,7 @@ body {
 }
 
 #tollo-logo {
-  width: 140px;
+  width: 150px;
   height: auto;
   padding: 0;
   margin: 0;
@@ -89,7 +91,7 @@ body {
 }
 
 #design-text p {
-  width: 90%;
+  width: 100%;
   height: auto;
   padding: 0;
 }
@@ -125,32 +127,35 @@ body {
 
 /* CHALLENGES */
 #challenges {
-  background: #91adf8;
+  background-color: #d1ddfc;
   padding: 40px 20px 120px 20px;
+  color: #1d2436;
 }
 
 /* LEARNING */
 #learning {
-  padding: 40px 20px 120px 20px;
+  background-color: #1c2131cc;
+  padding: 100px 20px 120px 20px;
+  color: #fff;
 }
 
 #visitBtn {
   display: flex;
   text-decoration: none;
   justify-content: center;
-  border: 2px solid #023846;
+  border: 2px solid #b4dae4;
   padding: 13px 9px 13px 9px;
   width: 80px;
   margin: 50px auto;
   position: relative;
   top: 20px;
-  color: #023846;
+  color: #fff;
   font-size: 24px;
   cursor: pointer;
 }
 
 #visitBtn:hover {
   background: #222a3f;
-  color: white;
+  color: #c8f3ff;
   cursor: pointer;
 }
