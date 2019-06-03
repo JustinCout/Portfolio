@@ -205,7 +205,6 @@ body {
   border: 2px solid #b4c2ec;
   margin: 5px;
   transition: all 0.8s ease;
-  cursor: pointer;
 }
 
 #projects h2 {
@@ -238,7 +237,6 @@ body {
   justify-content: center;
   font-size: 28px;
   line-height: 0;
-  cursor: pointer;
 }
 
 .cardBtn,
@@ -274,6 +272,17 @@ body {
   background: #222a3f;
   color: white;
   cursor: pointer;
+}
+
+.aboutBtn {
+  position: relative;
+  left: 5px;
+  margin: 0 auto;
+}
+
+.cardBtn {
+  right: 5px;
+  margin: 0 auto;
 }
 
 .card1 {
@@ -665,12 +674,11 @@ body {
     0% {
       width: 0;
     }
-  
+
     100% {
       width: 404px;
     }
   }
-  
 
   @keyframes type-short {
     0% {
@@ -754,7 +762,7 @@ body {
     0% {
       width: 0;
     }
-  
+
     100% {
       width: 324px;
     }

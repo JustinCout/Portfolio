@@ -8,14 +8,22 @@ body {
   font-size: 18px;
 }
 
+#header {
+  z-index: 100;
+}
+
 #tollo-title {
-  margin: 100px 0 0 0;
-  align-self: center;
   font-size: 40px;
 }
 
 #description {
-  height:85vh;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.555), rgba(0, 0, 0, 0.733)),
+    url(../assets/tollo-background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  z-index: 1;
 }
 
 .section-container {
@@ -26,39 +34,44 @@ body {
   flex-flow: wrap;
   padding: 10px 4% 10px 4%;
 }
-.section-container h2 {
-  font-size: 30px;
-  margin: 0 auto;
+#page-description {
+  margin: 150px auto;
+  width:100%;
+  background: #222a3fe3;
+  border: 2px solid #222a3f;
+  border-radius: 10px;
+  padding: 0 30px 30px 30px;
 }
 
 #tollo-profile-img {
-  width: 74%;
-  height: auto;
-  margin: 0 auto;
-  padding:0;
-  border:3px solid #222a3fb0;
+  padding: 0;
+  border: 3px solid #222a3fb0;
+  margin: 4px;
+  width:100%;
   border-radius: 5px;
+  z-index: -1;
+  display: flex;
 }
 
 /* FEATURES */
 #features {
   background: #91adf8;
-  padding:40px 20px 40px 20px;
+  padding: 40px 20px 40px 20px;
+  z-index: 1;
 }
-
 
 /* DESIGN */
 
 #design {
   background: #222a3f;
   color: #fff;
-  padding:40px 20px 40px 20px;
+  padding: 40px 20px 40px 20px;
 }
 
 #design-text {
   display: flex;
   flex-direction: row;
-  width:100%;
+  width: 100%;
   height: auto;
   margin: 0 auto;
 }
@@ -66,56 +79,59 @@ body {
 #tollo-logo {
   width: 140px;
   height: auto;
-  padding: 0 0 0 0;
-  margin:0 0 0 0;
-  float: left;
+  padding: 0;
+  margin: 0;
+  float: right;
+}
+
+#design h2 {
+  margin: 50px 0 0 0;
 }
 
 #design-text p {
-  width:90%;
-  height:auto;
-  padding:0;
+  width: 90%;
+  height: auto;
+  padding: 0;
 }
 
 .mock-up-container {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  flex-wrap: wrap;
+  width: auto;
   height: auto;
-  margin:0 auto;
-  padding:10px 0 10px 0;
+  margin: 0 auto;
+  padding: 0 0 40px 0;
 }
 
 .mock-up-container h3 {
   display: flex;
   flex-direction: column;
-  margin:0 auto;
-  padding:0 0 20px 0;
-
+  margin: 0 auto;
+  padding: 0 0 20px 0;
 }
 
-
 #tollo-old {
-  margin:0 auto;
-  width:40%;
-  height: auto;
+  margin: 0 auto;
+  width:97%;
+  height:auto;
 }
 
 #tollo-home {
-  margin:0 auto;
-  width: 55%;
-  height: auto;
+  margin: 0 auto;
+  width:97%;
+  height:auto;
 }
 
 /* CHALLENGES */
 #challenges {
   background: #91adf8;
-  padding:40px 20px 40px 20px;
+  padding: 40px 20px 120px 20px;
 }
 
 /* LEARNING */
 #learning {
-  padding:40px 20px 40px 20px;
+  padding: 40px 20px 120px 20px;
 }
 
 #visitBtn {
@@ -125,7 +141,7 @@ body {
   border: 2px solid #023846;
   padding: 13px 9px 13px 9px;
   width: 80px;
-  margin: 0 auto;
+  margin: 50px auto;
   position: relative;
   top: 20px;
   color: #023846;
