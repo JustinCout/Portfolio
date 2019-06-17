@@ -579,12 +579,6 @@ body {
 }
 
 @media only screen and (max-width: 1200px) {
-  .skillItem {
-    width: 80px;
-    height: 90px;
-    margin: 0 10px 0 10px;
-  }
-
   #skills .container {
     width: 100%;
   }
@@ -680,12 +674,6 @@ body {
     padding: 0 0 5px 10px;
     margin: 5px 0 0 0;
   }
-
-  .skillItem {
-    width: 60px;
-    height: 70px;
-    margin: 0 10px 0 10px;
-  }
 }
 
 @media only screen and (max-width: 740px) {
@@ -725,16 +713,6 @@ body {
       width: 250px;
     }
   }
-
-  .skillItem {
-    width: 70px;
-    height: 80px;
-    margin: 0 10px 0 10px;
-    display: flex;
-    flex-direction: column;
-
-    flex-wrap: wrap;
-  }
 }
 
 @media only screen and (max-width: 539px) {
@@ -766,19 +744,8 @@ body {
     padding: 0;
   }
 
-  .skillItem {
-    width: 70px;
-    height: 80px;
-    margin: 10px 0 0 0;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
   #pythonLogo {
-    margin: 0 10px 15px 10px;
+    margin: 15px 10px 0 10px;
   }
 }
 
@@ -859,16 +826,17 @@ body {
   }
 
   .skillItem {
-    width: 20%;
+    width: 15%;
+    height: auto;
     margin: 7px 5px 5px 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
   }
 
   #oracleLogo {
-    margin: 0 0 1px 4px;
+    margin: 30px 0 0 25px;
+  }
+
+  #nodeLogo {
+    margin: 10px 0 0 10px;
   }
 
   #contact .container {
