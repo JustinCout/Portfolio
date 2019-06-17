@@ -826,8 +826,8 @@ body {
   }
 
   .skillItem {
-    width: 15%;
-
+    width: 70px;
+    height: auto;
     margin: 7px 5px 5px 5px;
   }
 
