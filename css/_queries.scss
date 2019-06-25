@@ -1,0 +1,307 @@
+@media only screen and (max-width: 1200px) {
+  #skills .container {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 868px) {
+  #dropdownContent nav ul li {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 867px) {
+  /*Mobile/Tablet Header*/
+
+  #header {
+    height: 60px;
+
+    #mainNav {
+      display: none;
+    }
+
+    #logo {
+      position: fixed;
+      left: 0;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  #burgerMenu {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 20px;
+    top: 10px;
+  }
+
+  .line {
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-transition: all cubic-bezier(0.25, 0.1, 0.34, 1.45) 0.3s;
+    -moz-transition: all cubic-bezier(0.25, 0.1, 0.34, 1.45) 0.3s;
+    -o-transition: all cubic-bezier(0.25, 0.1, 0.34, 1.45) 0.3s;
+    transition: all cubic-bezier(0.25, 0.1, 0.34, 1.45) 0.3s;
+  }
+
+  .line1 {
+    top: 19%;
+  }
+
+  .line2 {
+    top: 49%;
+  }
+
+  .line3 {
+    top: 79%;
+  }
+
+  #burgerMenu.close .line1 {
+    transform: rotate(45deg);
+    top: 49%;
+  }
+
+  #burgerMenu.close .line2 {
+    transform: rotate(-45deg);
+    top: 49%;
+  }
+
+  #burgerMenu.close .line3 {
+    transform: rotate(45deg);
+    top: 49%;
+  }
+
+  #dropdown {
+    position: fixed;
+    width: 100%;
+  }
+
+  #dropdownContent {
+    display: none;
+    position: absolute;
+    top: 50px;
+    background-color: #566885;
+    padding: 10px 0 15px 0;
+    height: 160px;
+    width: 100%;
+  }
+
+  #dropdownContent nav ul {
+    list-style-type: none;
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+    padding: 0 0 5px 10px;
+    margin: 5px 0 0 0;
+  }
+
+  #skills .skillItem {
+    width: 17%;
+  }
+
+  #nodeLogo .skillItem {
+    padding: 0 30px 0 10px;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  #about {
+    #aboutMsgContainer {
+      width: 400px;
+      height: 140px;
+      margin: 25vh 0 0 0;
+      padding: 4vh 2vh 0 2vh;
+    }
+
+    .typing {
+      transform: translateY(-50%);
+      font-size: 28px;
+      white-space: nowrap;
+      overflow: hidden;
+      margin: 0;
+      width: 700px;
+      border-right: 2px solid transparent;
+    }
+
+    @keyframes type {
+      0% {
+        width: 0;
+      }
+
+      100% {
+        width: 404px;
+      }
+    }
+
+    @keyframes type-short {
+      0% {
+        width: 0;
+      }
+
+      100% {
+        width: 250px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 539px) {
+  #projects {
+    .cardBtn2 {
+      top: 0px;
+    }
+  }
+
+  #skills {
+    h4 {
+      font-size: 18px;
+      margin: 0 auto;
+      padding: 0;
+      width: 100%;
+      height: auto;
+      display: flex;
+
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .skillSection {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+
+      margin: 0 auto;
+      justify-content: center;
+      flex-flow: wrap;
+      padding: 0;
+    }
+
+    #pythonLogo {
+      margin: 15px 10px 0 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 446px) {
+  #header #logo {
+
+    padding:0 0 10px 0;
+  }
+
+  #about {
+    #aboutMsgContainer {
+      width: 320px;
+      height: 120px;
+      margin: 25vh 0 0 0;
+      padding: 1vh 0 4vh 0 2vh;
+    }
+
+    .typing {
+      font-size: 22px;
+    }
+
+    @keyframes type {
+      0% {
+        width: 0;
+      }
+
+      100% {
+        width: 324px;
+      }
+    }
+
+    @keyframes type-short {
+      0% {
+        width: 0;
+      }
+
+      100% {
+        width: 190px;
+      }
+    }
+  }
+
+  #projects {
+    .projectCard p {
+      font-size: 14px;
+    }
+
+    .cardBtn4 {
+      margin: 0;
+      position: relative;
+      top: 0;
+      p {
+        padding: 0 1px 0 1px;
+        margin: 0;
+      }
+    }
+
+    .cardTitle4 {
+      padding: 0;
+      margin: 20px 0 20px 0;
+    }
+  }
+
+  #skills {
+    .skillSection {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-flow: wrap;
+      margin: 0 auto;
+    }
+
+    .skillSection:nth-of-type(2),
+    .skillSection:nth-of-type(3) {
+      padding: 0 50px 0 0;
+    }
+
+    p {
+      padding: 0;
+      margin: 100px 4px 0 4px;
+    }
+
+    .container {
+      width: 100%;
+    }
+
+    .skillItem {
+      width: 17%;
+      height: auto;
+      margin: 7px 5px 5px 5px;
+    }
+
+    #oracleLogo {
+      margin: 30px 0 0 25px;
+    }
+
+    #nodeLogo {
+      margin: 10px 0 0 10px;
+    }
+  }
+
+  #contact {
+    .container {
+      justify-content: center;
+    }
+
+    a {
+      padding: 10px;
+    }
+
+    #contactInfo .fab {
+      font-size: 60px;
+    }
+
+    #headshot {
+      width: 35%;
+    }
+  }
+}

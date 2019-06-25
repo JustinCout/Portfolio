@@ -1,0 +1,152 @@
+#projects {
+  text-align: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f6f5f3;
+  color: #222a3f;
+  padding: 0 0 10vh 0;
+
+  .container {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-flow: wrap;
+
+    a:hover {
+        color: $hoverColor;
+      }
+  }
+
+  h2 {
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+  }
+
+  .projectCard {
+    width: 500px;
+    height: 300px;
+    border: 2px solid #b4c2ec;
+    margin: 5px;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+
+    p {
+      display: none;
+      color: #222a3f;
+      font-size: 16px;
+      text-align: left;
+      padding: 5px;
+    }
+  }
+
+  [class^="cardTitle"] {
+    display: none;
+    justify-content: center;
+    font-size: 28px;
+    line-height: 0;
+  }
+
+  .cardBtn,
+  .cardBtn2,
+  .cardBtn3,
+  .cardBtn4 {
+    display: none;
+    text-decoration: none;
+    justify-content: center;
+    border: 2px solid #1e6577;
+    padding: 4px 9px 4px 9px;
+    width: 50px;
+    margin: 0 auto;
+    position: relative;
+    top: 20px;
+    color: #1e6577;
+    font-size: 18px;
+  }
+
+  .cardBtn2 {
+    top: 10px;
+  }
+
+  .cardBtn4 {
+    top: 0;
+  }
+
+  .cardBtn:hover,
+  .cardBtn2:hover,
+  .cardBtn3:hover,
+  .cardBtn4:hover {
+    background: #222a3f;
+    color: white;
+    cursor: pointer;
+  }
+
+  .aboutBtn {
+    position: relative;
+    left: 5px;
+    margin: 0 auto;
+  }
+
+  .cardBtn {
+    right: 5px;
+    margin: 0 auto;
+  }
+
+  .card1 {
+    background: url("../assets/tollo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 10% 0;
+    &:hover {
+      background-image: linear-gradient(#ffffffc7, #bad1e7),
+        url("../assets/tollo.jpg");
+    }
+  }
+
+  .card2 {
+    background-image: url("../assets/thanos-survivors.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    &:hover {
+      background-image: linear-gradient(#ffffffc7, #bad1e7),
+        url("../assets/thanos-survivors.png");
+    }
+  }
+
+  .card3 {
+    background-image: url("../assets/tictactoe.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    &:hover {
+      background-image: linear-gradient(#ffffffc7, #bad1e7),
+        url("../assets/tictactoe.png");
+    }
+  }
+
+  .card4 {
+    background-image: url("../assets/Critical-Debates.png");
+    background-size: 175%;
+    background-repeat: no-repeat;
+    background-position: 50% 40%;
+    &:hover {
+      background-image: linear-gradient(#ffffffc7, #bad1e7),
+        url("../assets/Critical-Debates.png");
+    }
+  }
+}
+
+#projects.transform .projectCard {
+  opacity: 0;
+  transform: translate3d(0, 0, 500px) rotateX(80deg);
+
+  h2 {
+    opacity: 0;
+    transform: translate3d(0, 0, 300px) rotateX(80deg);
+  }
+}

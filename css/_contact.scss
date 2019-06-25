@@ -1,0 +1,90 @@
+#contact {
+  width: 100%;
+  text-align: center;
+  min-height: 70vh;
+  background-color: #2d3341;
+  color: #fff;
+  margin: 0;
+  padding: 0 0 30px 0;
+
+  .container {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-flow: wrap;
+  }
+
+  h3 {
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    margin: 0 auto;
+    padding: 0 40px 0 40px;
+    &:hover {
+      color: $hoverColor;
+    }
+  }
+
+  #contactInfo {
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+
+    .fab,
+    .fas {
+      font-size: 70px;
+    }
+  }
+
+  svg {
+    z-index: 0;
+    width: 100%;
+  }
+
+  #headshot {
+    width: 145px;
+    border-radius: 50%;
+    margin: 60px 0 0 0;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+}
+
+#contact.transform {
+  h3 {
+    opacity: 0;
+    transform: translate3d(0, 0, 400px) rotateY(80deg);
+  }
+
+  #contactInfo {
+    opacity: 0;
+    transform: translate3d(0, 0, 400px) rotateY(80deg);
+  }
+
+  #headshot {
+    opacity: 0;
+    transform: translate3d(0, 0, 400px) rotateX(80deg);
+  }
+}
+
+#footer {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  background-color: #222a3f;
+  color: #fff;
+  flex-shrink: 0;
+  position: relative;
+  bottom: 0;
+  padding-top: 10px;
+}

@@ -1,0 +1,96 @@
+#about {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.623)),
+      url("../assets/milky-way2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+  
+    #aboutMsgContainer {
+      border: solid #222a3fbb;
+      border-radius: 5px;
+      background: #222a3fbb;
+      width: 700px;
+      height: 230px;
+      margin: 25vh 0 0 0;
+      padding: 4vh 2vh 0 2vh;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      transition: all 1s ease;
+    }
+  
+    #about.transform #aboutMsgContainer {
+      opacity: 0;
+      transform: translate3d(0, 0, 400px) rotateX(100deg);
+    }
+  
+    .typing {
+      transform: translateY(-50%);
+      font-size: 48px;
+      white-space: nowrap;
+      overflow: hidden;
+      margin: 0;
+      width: 700px;
+  
+      border-right: 2px solid transparent;
+    }
+  
+    .animation-type1 {
+      animation: type 1.5s steps(40) 1s 1 normal both,
+        cursor 0.5s steps(40) 2 normal;
+      animation-delay: 0.5s;
+    }
+  
+    .animation-type2 {
+      animation: type 1.5s steps(40) 1s 1 normal both,
+        cursor 0.5s steps(40) 3 normal;
+      animation-delay: 2.4s;
+    }
+  
+    .animation-type3 {
+      animation: type 1.5s steps(40) 1s 1 normal both,
+        cursor 0.5s steps(40) 3 normal;
+      animation-delay: 4.1s;
+    }
+  
+    .animation-type4 {
+      animation: type-short 1.5s steps(40) 1s 1 normal both,
+        cursor 0.5s steps(40) infinite normal;
+      animation-delay: 6s;
+    }
+  
+    @keyframes type {
+      0% {
+        width: 0;
+      }
+  
+      100% {
+        width: 700px;
+      }
+    }
+  
+    @keyframes type-short {
+      0% {
+        width: 0;
+      }
+  
+      100% {
+        width: 420px;
+      }
+    }
+  
+    @keyframes cursor {
+      0% {
+        border-right-color: rgb(255, 255, 255);
+      }
+  
+      100% {
+        border-right-color: transparent;
+      }
+    }
+  }

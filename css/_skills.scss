@@ -1,0 +1,136 @@
+#skills {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  background-color: #d6e1ef;
+  color: #222a3f;
+  padding: 10px 0 20px 0;
+  z-index: 2;
+  transform-style: preserve-3d;
+  transform: perspective(800px);
+  .container {
+    width: 80%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+  }
+  p {
+    margin: 100px 20% 0 20%;
+    font-size: 18px;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+  }
+
+  .skillItem {
+    width: 8%;
+    height: auto;
+    margin: 0 10px 0 10px;
+    z-index: 1;
+    -webkit-transition: all 1.5s ease;
+    -moz-transition: all 1.5s ease;
+    -o-transition: all 1.5s ease;
+    transition: all 1.5s ease;
+  }
+
+  .skillSection {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-flow: wrap;
+    border-bottom: 2px solid #222a3f;
+    padding: 20px 0 20px 0;
+
+    h4 {
+      font-size: 20px;
+      text-align: center;
+      width: 130px;
+      height: auto;
+      margin: 10px 30px 0 0;
+      -webkit-transition: all 0.8s ease;
+      -moz-transition: all 0.8s ease;
+      -o-transition: all 0.8s ease;
+      transition: all 0.8s ease;
+    }
+  }
+  h3 {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+}
+
+#skills.transform {
+  h3 {
+    opacity: 0;
+    transform: translate3d(0, 0, 200px) rotateX(20deg);
+  }
+  p {
+    opacity: 0;
+    transform: translate3d(0, 0, 300px) rotateX(40deg);
+  }
+  .skillItem {
+    opacity: 0;
+    transform: translate3d(0, 0, 400px) rotateY(40deg);
+  }
+}
+
+/* Logo Sizing and Margin */
+
+#htmlLogo,
+#cssLogo,
+#reactLogo,
+#aspLogo,
+#sassLogo {
+  width: 120%;
+}
+
+#pythonLogo {
+  width: 150%;
+  margin: 40px 10px 0 10px;
+}
+
+#reactNativeLogo {
+  width: 180%;
+  margin: 10px 0 0 10px;
+}
+
+#gitLogo,
+#mySqlLogo {
+  width: 100%;
+}
+
+#xmlLogo {
+  width: 90%;
+  margin: 10px 0 0 0;
+}
+
+#phpLogo {
+  width: 100%;
+  margin: 20px 0 0 0;
+}
+
+#jsLogo {
+  width: 80%;
+  margin: 5px 0 0 0;
+}
+
+#oracleLogo,
+#nodeLogo {
+  margin: 40px 0 0 10px;
+  width: 120%;
+}
+
+#nodeLogo {
+  margin: 20px 0 0 0;
+  width: 120%;
+}
