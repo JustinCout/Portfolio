@@ -189,8 +189,7 @@
 
 @media only screen and (max-width: 446px) {
   #header #logo {
-
-    padding:0 0 10px 0;
+    padding: 0 0 10px 0;
   }
 
   #about {
@@ -227,6 +226,7 @@
   }
 
   #projects {
+    width: 100%;
     .projectCard p {
       font-size: 14px;
     }

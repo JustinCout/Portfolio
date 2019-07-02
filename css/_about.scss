@@ -1,14 +1,16 @@
 #about {
     width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.623)),
-      url("../assets/milky-way2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+   height: 100vh;
+    // background-image: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.623)),
+    //   url("../assets/milky-way2.jpg");
+    // background-size: cover;
+    // background-repeat: no-repeat;
+   // background-attachment: fixed;
     color: rgb(255, 255, 255);
+    //background: rgb(3, 1, 19);
     display: flex;
     justify-content: center;
+    z-index: -10;
   
     #aboutMsgContainer {
       border: solid #222a3fbb;
