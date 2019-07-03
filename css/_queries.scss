@@ -12,20 +12,22 @@
 
 @media only screen and (max-width: 867px) {
   /*Mobile/Tablet Header*/
+#moon {
+  position:absolute;
+  top:100px;
+  left:0;
+  right:1000px;
+}
 
-  #header {
-    height: 60px;
+  #mainNav {
+    display: none;
+  }
 
-    #mainNav {
-      display: none;
-    }
-
-    #logo {
-      position: fixed;
-      left: 0;
-      margin: 0;
-      padding: 0;
-    }
+  #logo {
+    position: fixed;
+    left: 0;
+    margin: 0;
+    padding: 0;
   }
 
   #burgerMenu {
@@ -83,7 +85,7 @@
   #dropdownContent {
     display: none;
     position: absolute;
-    top: 50px;
+    top: 60px;
     background-color: #566885;
     padding: 10px 0 15px 0;
     height: 160px;
@@ -188,6 +190,7 @@
 }
 
 @media only screen and (max-width: 446px) {
+
   #header #logo {
     padding: 0 0 10px 0;
   }
@@ -196,7 +199,7 @@
     #aboutMsgContainer {
       width: 320px;
       height: 120px;
-      margin: 25vh 0 0 0;
+      margin: 34vh 0 0 0;
       padding: 1vh 0 4vh 0 2vh;
     }
 
@@ -303,5 +306,9 @@
     #headshot {
       width: 35%;
     }
+  }
+
+  #footer {
+    margin:100px 0 0 0;
   }
 }

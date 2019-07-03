@@ -40,7 +40,7 @@ body {
 
 #header {
   width: 100%;
-  height: 50px;
+  height: 60px;
   margin:0;
   padding:0 0 0 0;
   background-color: #222a3ff1;
@@ -52,7 +52,7 @@ body {
   align-items: flex-start;
   flex-wrap: nowrap;
   border-bottom: solid #566885;
-  z-index: 30;
+  z-index: 3000;
 
   #logo {
     width: 90px;

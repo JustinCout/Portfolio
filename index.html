@@ -11,9 +11,27 @@
 </head>
 
 <body>
-    <header id="header">
-      <a href="#"><img src="assets/JC-logo2.png" alt="Justin Coutinho's logo" id="logo" /></a>
-      <nav id="mainNav">
+  <header id="header">
+    <a href="#"><img src="assets/JC-logo2.png" alt="Justin Coutinho's logo" id="logo" /></a>
+    <nav id="mainNav">
+      <ul>
+        <li><a class="homeLink" href="http://justincoutinho.com/">HOME</a></li>
+        <li><a class="aboutLink" href="#about">ABOUT</a></li>
+        <li><a class="projectsLink" href="#projects">PROJECTS</a></li>
+        <li><a class="skillsLink" href="#skills">SKILLS</a></li>
+        <li><a class="contactLink" href="#contact">CONTACT</a></li>
+        <li><a href="assets/JustinCoutinho-WebResume.pdf">RESUME</a></li>
+      </ul>
+    </nav>
+
+    <div id="dropdown">
+      <div id="burgerMenu">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+        <div class="line line3"></div>
+      </div>
+      <div id="dropdownContent">
+        <nav>
           <ul>
             <li><a class="homeLink" href="http://justincoutinho.com/">HOME</a></li>
             <li><a class="aboutLink" href="#about">ABOUT</a></li>
@@ -23,49 +41,32 @@
             <li><a href="assets/JustinCoutinho-WebResume.pdf">RESUME</a></li>
           </ul>
         </nav>
+      </div>
+    </div>
+  </header>
+  <section id="about" class="transform">
+    <div id="space-background">
+      <div id="moon"></div>
+      <div class="stars" id="starSm"></div>
+      <div class="stars" id="starMd"></div>
+      <div class="stars" id="starMdLg"></div>
+      <div class="stars" id="starLg"></div>
+    </div>
+    <div id="aboutMsgContainer">
+      <p class="typing animation-type1">
+        Hi, I'm Justin Coutinho.
+      </p>
+      <p class="typing animation-type2">
+        I'm a full stack web developer,
+      </p>
 
-      <div id="dropdown">
-        <div id="burgerMenu">
-          <div class="line line1"></div>
-          <div class="line line2"></div>
-          <div class="line line3"></div>
-        </div>
-        <div id="dropdownContent">
-          <nav>
-            <ul>
-              <li><a class="homeLink" href="http://justincoutinho.com/">HOME</a></li>
-              <li><a class="aboutLink" href="#about">ABOUT</a></li>
-              <li><a class="projectsLink" href="#projects">PROJECTS</a></li>
-              <li><a class="skillsLink" href="#skills">SKILLS</a></li>
-              <li><a class="contactLink" href="#contact">CONTACT</a></li>
-              <li><a href="assets/JustinCoutinho-WebResume.pdf">RESUME</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
-    <section id="about" class="transform">
-      <div id="space-background">
-          <div class="stars" id="starSm"></div>
-          <div class="stars" id="starMd"></div>
-          <div class="stars" id="starLg"></div>
-          <div class="shine"></div>
-      </div>
-      <div id="aboutMsgContainer">
-        <p class="typing animation-type1">
-          Hi, I'm Justin Coutinho.
-        </p>
-        <p class="typing animation-type2">
-          I'm a full stack web developer,
-        </p>
-
-        <p class="typing animation-type3">
-          fitness enthusiast, guitarist, and
-        </p>
-        <p class="typing animation-type4">
-          an all-around geek.
-        </p>
-      </div>
+      <p class="typing animation-type3">
+        fitness enthusiast, guitarist, and
+      </p>
+      <p class="typing animation-type4">
+        an all-around geek.
+      </p>
+    </div>
   </section>
 
   <section id="projects" class="transform">
@@ -106,14 +107,18 @@
         </p>
         <a class="visitBtn cardBtn3" href="https://justincout.github.io/Tic-Tac-Toe/">VISIT</a>
       </div>
-      <div class="projectCard card4"> 
-          <h4 class="cardTitle4">Critical Debates</h4>
-          <p>
-            Critical Debates is a simple chat application that is currently one-way. The purpose of this project was to create a chat
-            application that uses XML to store chatlogs and AJAX to refresh the chats on an interval. I used PHP to create a login system and interact with XML
-            (XML DOM). This application does not have a database, as XML is used to store logins and chat data. You can login through Google, or use the credentials "jc" and "password" to test the app.    
-          </p>
-        <a class="visitBtn cardBtn4" href="http://criticaldebates.justincoutinho.com/">VISIT</a></div>
+      <div class="projectCard card4">
+        <h4 class="cardTitle4">Critical Debates</h4>
+        <p>
+          Critical Debates is a simple chat application that is currently one-way. The purpose of this project was to
+          create a chat
+          application that uses XML to store chatlogs and AJAX to refresh the chats on an interval. I used PHP to create
+          a login system and interact with XML
+          (XML DOM). This application does not have a database, as XML is used to store logins and chat data. You can
+          login through Google, or use the credentials "jc" and "password" to test the app.
+        </p>
+        <a class="visitBtn cardBtn4" href="http://criticaldebates.justincoutinho.com/">VISIT</a>
+      </div>
     </div>
   </section>
   <section id="skills" class="transform">
@@ -126,62 +131,62 @@
       new technologies and growing as a developer.
     </p>
     <div class="container">
-        <h4>EXPERIENCED IN</h4>
+      <h4>EXPERIENCED IN</h4>
       <div class="skillSection">
-      <div class="skillItem">
-        <img src="assets/js.png" alt="JavaScript Logo" id="jsLogo" />
-      </div>
-      <div class="skillItem">
-        <img src="assets/html.png" alt="HTML Logo" id="htmlLogo" />
-      </div>
-      <div class="skillItem">
-        <img src="assets/css3-logo-png-transparent.png" alt="CSS Logo" id="cssLogo" />
-      </div>
-      <div class="skillItem">
-        <img src="assets/SASS.png" alt="SASS Logo" id="sassLogo" />
-      </div>
-      <div class="skillItem">
+        <div class="skillItem">
+          <img src="assets/js.png" alt="JavaScript Logo" id="jsLogo" />
+        </div>
+        <div class="skillItem">
+          <img src="assets/html.png" alt="HTML Logo" id="htmlLogo" />
+        </div>
+        <div class="skillItem">
+          <img src="assets/css3-logo-png-transparent.png" alt="CSS Logo" id="cssLogo" />
+        </div>
+        <div class="skillItem">
+          <img src="assets/SASS.png" alt="SASS Logo" id="sassLogo" />
+        </div>
+        <div class="skillItem">
           <img src="assets/xml.png" alt="XML Logo" id="xmlLogo" />
+        </div>
+        <div class="skillItem">
+          <img src="assets/php.png" alt="PHP Logo" id="phpLogo" />
+        </div>
+        <div class="skillItem">
+          <img src="assets/mySql.png" alt="mySql Logo" id="mySqlLogo" />
+        </div>
+        <div class="skillItem">
+          <img src="assets/git.png" alt="Git Logo" id="gitLogo" />
+        </div>
       </div>
-      <div class="skillItem">
-        <img src="assets/php.png" alt="PHP Logo" id="phpLogo" />
-      </div>
-      <div class="skillItem">
-        <img src="assets/mySql.png" alt="mySql Logo" id="mySqlLogo" />
-      </div>
-      <div class="skillItem">
-        <img src="assets/git.png" alt="Git Logo" id="gitLogo" />
-      </div>
-    </div>
-    <h4>INTERESTED IN</h4>
-    <div class="skillSection">
-       
-      <div class="skillItem">
-        <img src="assets/react.png" alt="React Logo" id="reactLogo" />
-      </div>
-      <div class="skillItem">
+      <h4>INTERESTED IN</h4>
+      <div class="skillSection">
+
+        <div class="skillItem">
+          <img src="assets/react.png" alt="React Logo" id="reactLogo" />
+        </div>
+        <div class="skillItem">
           <img src="assets/python.png" alt="Python Logo" id="pythonLogo" />
-      </div>
-      <div class="skillItem">
+        </div>
+        <div class="skillItem">
           <img src="assets/reactNative.png" alt="React Native Logo" id="reactNativeLogo" />
+        </div>
       </div>
-    </div>
-    <h4>ALSO HAVE EXPERIENCE WITH</h4>  
-    <div class="skillSection">
-       
-      <div class="skillItem">
-        <img src="assets/ASP.Net-512.png" alt="asp.net logo" id="aspLogo" />
-      </div>
-      <div class="skillItem">
+      <h4>ALSO HAVE EXPERIENCE WITH</h4>
+      <div class="skillSection">
+
+        <div class="skillItem">
+          <img src="assets/ASP.Net-512.png" alt="asp.net logo" id="aspLogo" />
+        </div>
+        <div class="skillItem">
           <img src="assets/node.png" alt="Node Logo" id="nodeLogo" />
         </div>
-      <div class="skillItem">
-        <img src="assets/oracle.png" alt="oracle logo" id="oracleLogo" />
+        <div class="skillItem">
+          <img src="assets/oracle.png" alt="oracle logo" id="oracleLogo" />
+        </div>
+
       </div>
 
-    </div>   
-    
-  </div>
+    </div>
   </section>
   <section id="contact" class="transform">
     <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="120" width="100%" version="1.1"
